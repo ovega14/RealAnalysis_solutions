@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\usepackage[]{amsmath}
+\usepackage[parfill]{parskip} %avoid indent when skipping lines
+
+\title{18.100A Assignment 1}
+\author{Octavio Vega}
+\date\today
+
+\begin{document}
+\maketitle
+	
+\section*{Problem 1}
+\subsection*{(a)}
+\begin{proof}
+	We will show that each set is a subset of the other to prove equality. Let $S=A\cap (B\cup C)$ and $T=(A\cup B)\cap (A\cup C)$. 
+	
+	Let $x \in S$. Then $x\in A$ and $x\in B\cup C$, 
+	
+	$\implies$ $x\in A$ and $x\in B$, or $x\in A$ and $x\in C$
+	
+	$\implies$ $x\in A\cap B$ or $x\in A\cap C$
+	
+	$\implies$ $x\in (A\cap B) \cup (A\cap C) = T$.
+	
+	Thus $x\in S \implies x\in T$, so $S\subseteq T$. Now let $x\in T$. Then $x\in (A\cap B) \cup (A\cap C)$,
+	
+	$\implies$ $x\in A\cap B$ or $x\in A \cap C$
+	
+	$\implies$ $x\in A$, and $x\in B$ or $C$
+	
+	$\implies$ $x\in A \cap (B\cup C) = S$. 
+	
+	Thus $x\in T \implies x\in S$, so $T\subseteq S$, which means $S=T$.
+	
+	Hence, $A\cap (B\cup C) = (A\cap B) \cup (A\cap C)$.
+	
+\end{proof}
+
+\subsection*{(b)}
+\begin{proof}
+	We proceed as in (a). Let $S = A \cup (B\cap C)$ and $T = (A\cup B) \cap (A\cup C)$. 
+	
+	First let $x\in S$. Then $x\in A$ or $x\in B\cap C$,
+	
+	$\implies$ $x\in A$ or $x\in B$, and $x\in A$ or $x\in C$
+	
+	$\implies$ $x\in (A\cup B)\cap(A\cup C) = T$.
+	
+	Thus $x\in S \implies x\in T$, so $S\subseteq T$. Now let $x\in T$. Then $x\in A\cup B$ and $x\in A\cup C$. If $x\in A$, then the requirement is satisfied immediately, regardless of whether $x$ is in $B$ or $C$. Otherwise, if $x\notin A$, then $x\in B$ and $x\in C$ must be true. So $x\in A$, or $x\in B$ and $x\in C$
+	
+	$\implies$ $x\in A\cup(B\cap C) = S$. 
+	
+	Thus $x\in T \implies x\in S$, so $T \subseteq S$, which means $S = T$. 
+	
+	Hence, $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$.
+\end{proof}
+
+\section*{Problem 2}
+\begin{proof}
+	(By induction). 
+	
+	The inductive hypothesis $P(n)$ is that, for $n\in\mathbb{N}$, $n<2^n$.
+\end{proof}
+\end{document}
