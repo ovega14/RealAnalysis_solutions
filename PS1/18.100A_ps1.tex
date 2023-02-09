@@ -69,12 +69,30 @@
 	
 	(Inductive step): Assume $P(n)$ is true for $n=m$, i.e. that $m < 2^m$ holds for $m\in\mathbb{N}$. Then
 	\begin{align}
-		2^{m+1} = 2 \cdot 2^m &> 2m \
-		&=m + m > m + 1, \quad \textrm{since $m>1$} \
+		2^{m+1} = 2 \cdot 2^m &> 2m \\
+		&=m + m > m + 1, \quad \textrm{since $m>1$} \\
 		\implies 2^{m+1} &> m + 1.
 	\end{align}
-	So $P(m)\implies P(m+1)$, so $P(n)$ is true for all $n\in\mathbb{N}$. 
+	So $P(m)\implies P(m+1)$, which means $P(n)$ is true for all $n\in\mathbb{N}$. 
 	
-	Thus, $2^n > n$ $\forall n\in\mathbb{N}$.
+	Thus, $\forall n\in\mathbb{N}$, $2^n > n$.
 \end{proof}
+
+\section*{Problem 3}
+\begin{proof}
+	Let $A$ be a finite set such that $|A|=n$. We form the power set $\mathcal{P}(A)$ by creating the set of all possible subsets of $A$. Hence $|\mathcal{P}(A)|$ is equivalent to the number of possible subsets of $A$, which we compute by summing over the number of combinations that can be created by choosing elements of $A$, in succession from choosing no elements (the empty set $\emptyset$) to choosing all elements (the full set $A$). Thus
+	\begin{equation}
+		|\mathcal{P}(A)| = \sum_{k=0}^n  \begin{pmatrix} n \\ k \end{pmatrix}.
+	\end{equation}
+	By the binomial expansion theorem,
+	\begin{equation}\label{binom}
+		\sum_{k=0}^n \begin{pmatrix} n \\ k \end{pmatrix} p^k q^{n-k} = (p+q)^n.
+	\end{equation}
+	Substituting $p=q=1$ into \eqref{binom}, we arrive at the desired result,
+	\begin{equation}
+		|\mathcal{P}(A)| = (1 + 1)^n = 2^n.
+	\end{equation}
+\end{proof}
+
+
 \end{document}
