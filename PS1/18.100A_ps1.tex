@@ -64,5 +64,17 @@
 	(By induction). 
 	
 	The inductive hypothesis $P(n)$ is that, for $n\in\mathbb{N}$, $n<2^n$.
+	
+	(Base case): $1 < 2^1$, so $P(1)$ is true. 
+	
+	(Inductive step): Assume $P(n)$ is true for $n=m$, i.e. that $m < 2^m$ holds for $m\in\mathbb{N}$. Then
+	\begin{align}
+		2^{m+1} = 2 \cdot 2^m &> 2m \
+		&=m + m > m + 1, \quad \textrm{since $m>1$} \
+		\implies 2^{m+1} &> m + 1.
+	\end{align}
+	So $P(m)\implies P(m+1)$, so $P(n)$ is true for all $n\in\mathbb{N}$. 
+	
+	Thus, $2^n > n$ $\forall n\in\mathbb{N}$.
 \end{proof}
 \end{document}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  9 FEB 2023 17:23
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  9 FEB 2023 17:38
  restricted system commands enabled.
 **18.100A_ps1.tex
 (./18.100A_ps1.tex
@@ -333,15 +333,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 00A_ps1.aux))
 
 Here is how much of LuaTeX's memory you used:
- 3390 strings out of 478540
+ 3395 strings out of 478540
  125056,460012 words of node,token memory allocated
- 500 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 9 attribute, 53 glu
-e_spec, 6 attribute_list, 1 write nodes
-   avail lists: 2:425,3:269,4:10,5:223,6:47,7:2480,8:19,9:171,10:8,11:36
- 23220 multiletter control sequences out of 65536+200000
- 65 fonts using 5671159 bytes
- 68i,8n,71p,503b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 575 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 7 dir, 2 glue, 4 kern, 1 glyph, 21 attribute, 53 gl
+ue_spec, 12 attribute_list, 1 write nodes
+   avail lists: 2:407,3:269,4:10,5:217,6:47,7:2480,8:22,9:192,10:8,11:36
+ 23225 multiletter control sequences out of 65536+200000
+ 67 fonts using 5934535 bytes
+ 68i,13n,71p,503b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf>
 <//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><
 //?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><//?
@@ -350,11 +350,12 @@ e_spec, 6 attribute_list, 1 write nodes
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on 18.100A_ps1.pdf (2 pages, 62443 bytes).
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on 18.100A_ps1.pdf (2 pages, 72597 bytes).
 
-PDF statistics: 64 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
