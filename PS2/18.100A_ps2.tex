@@ -31,6 +31,7 @@
 \end{proof}
 
 \section*{Problem 2}
+\subsection*{(a)}
 \begin{proof}
 	We want to show that $\exists b\in S$ such that $\forall a\in A$, $a\leq b$.
 
@@ -41,6 +42,21 @@
 	So $A$ is also ordered. Since $A$ is finite, then $\exists a_0 \in A$ such that $\forall a \in A$, $a_0 \geq a$. 
 	
 	Thus, $A$ is bounded.
+\end{proof}
+
+\subsection*{(b)}
+\begin{proof}
+	(By contradiction).
+	
+	Assuming $A$ is finite, suppose instead that there is no maximal element in $A$. Choose an element $a_1 \in A$. Then, since $a_1$ is not the maximum, $\exists a_2 \in A$ such that $a_1 < a_2$. But $a_2$ is also not the maximum of $A$, so $\exists a_3 \in A$ such that $a_2 < a_3$. Continuing in this manner, we find an increasing sequence $\{a_n\}_{n\in\mathbb{N}}$ of elements of $A$, i.e. such that 
+	\begin{equation}
+		a_1 < a_2 < \cdots < a_n < a_{n+1} < \cdots.
+	\end{equation}
+	But because this sequence is infinite and contained in $A$, this contradicts the assumption that $A$ is finite. Thus, there must exist a maximal element in $A$. 
+	
+	To show that there exists a minimum element, we recreate the same argument from above where instead, supposing that there is no minimal element, we demonstrate that we can construct an infinite decreasing sequence \\$\cdots a_n < \cdots <a_2 < a_1$ of elements of $A$, once again arriving at a contradiction.
+	
+	Therfore, both $\inf{A}$ and $\sup{A}$ exist in $A$.
 \end{proof}
 	
 \end{document}
