@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  10 FEB 2023 15:17
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  10 FEB 2023 15:25
  restricted system commands enabled.
 **18.100A_ps2.tex
 (./18.100A_ps2.tex
@@ -338,7 +338,7 @@ Here is how much of LuaTeX's memory you used:
  500 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 9 attribute, 53 glu
 e_spec, 6 attribute_list, 1 write nodes
-   avail lists: 2:172,3:72,4:4,5:74,6:22,7:870,8:11,9:92,10:3,11:32
+   avail lists: 2:292,3:138,4:4,5:124,6:34,7:1748,8:11,9:144,10:3,11:46
  23219 multiletter control sequences out of 65536+200000
  64 fonts using 5539471 bytes
  68i,6n,71p,503b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -349,10 +349,11 @@ e_spec, 6 attribute_list, 1 write nodes
 /c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 18.100A_ps2.pdf (1 page, 44453 bytes).
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on 18.100A_ps2.pdf (1 page, 55236 bytes).
 
-PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
