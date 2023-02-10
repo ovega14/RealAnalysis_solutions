@@ -118,4 +118,25 @@
 	
 	To satisfy this, choose $A_{i} = \{i\}$. Then $A_1 \cup A_2 \cup A_3 \cdots = \{1, 2, 3, ... \} = \mathbb{N}$. So their union is not a finite set, as desired. 
 \end{proof}
+
+\section*{Problem 6}
+\subsection*{(a)}
+Consider $q=\frac{4}{15}$. Then 
+\begin{equation}
+	\frac{4}{15} = \frac{2\cdot2}{3\cdot5} = \frac{2^2}{3\cdot5}.
+\end{equation}
+So we compute
+\begin{equation}
+	f(\frac{4}{15}) = 2^{2\cdot2} \cdot 3^{2-1}\cdot5^{2-1} = 2^4\cdot3\cdot5.
+\end{equation}
+Hence, $f(\frac{4}{15})=240$.
+
+Now suppose $f(q) = 108.$ Then we write
+\begin{equation}
+	108 = 2\cdot54 = 2\cdot2\cdot27 = 2^2 \cdot 3^3 = p_1^{2r_1}q_1^{2s_1 - 1},
+\end{equation}
+so we identify $r_1 = 1$ and $s_1=2$. Thus, 
+\begin{equation}
+	q = \frac{p_1^{r_1}}{q_1^{s_1}} = \frac{2}{3^2} = \frac{2}{9}.
+\end{equation}
 \end{document}
