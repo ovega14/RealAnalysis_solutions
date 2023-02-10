@@ -127,9 +127,9 @@ Consider $q=\frac{4}{15}$. Then
 \end{equation}
 So we compute
 \begin{equation}
-	f(\frac{4}{15}) = 2^{2\cdot2} \cdot 3^{2-1}\cdot5^{2-1} = 2^4\cdot3\cdot5.
+	f\left(\frac{4}{15}\right) = 2^{2\cdot2} \cdot 3^{2-1}\cdot5^{2-1} = 2^4\cdot3\cdot5.
 \end{equation}
-Hence, $f(\frac{4}{15})=240$.
+Hence, $f\left(\frac{4}{15}\right)=240$.
 
 Now suppose $f(q) = 108.$ Then we write
 \begin{equation}
@@ -144,7 +144,7 @@ so we identify $r_1 = 1$ and $s_1=2$. Thus,
 \begin{proof}
 	We first show that $f$ is injective.
 	
-	Let $f(t_1)=f(t_2)$. Then we consider two cases:
+	Let $f(t_1)=f(t_2)$. Then we consider three cases:
 	
 	Case 1: $f(t_1) = f(t_2) = 1$,
 	
@@ -152,7 +152,48 @@ so we identify $r_1 = 1$ and $s_1=2$. Thus,
 	
 	$\implies t_1 = t_2$.
 	
-	Case 2: 
+	Case 2: $t\in \mathbb{N} \backslash \{1\} $, $t_1 = p_1^{r_1}\cdots p_N^{r_N}$, $t_2 = q_1^{s_1}\cdots q_N^{s_N}$,
+	
+	$f(t_1) = f(t_2)$
+	
+	$\implies p_1^{2r_1}\cdots p_N^{2r_N} = q_1^{2s_1} \cdots q_N^{2s_n}$
+	
+	$\implies p_1^{r_1} \cdots p_n^{r_N} = q_1^{s_1} \cdots q_N^{s_N}$,
+	
+	since $t_1, t_2 > 0$. But according to the theorem stated in the problem, these prime numbers and exponents are unique, so if they are equal to the same number, then they must all be equal. Thus $p_i = q_i$ and $r_i = s_i$ $\forall i\in\{1, 2, ..., N\}$, which implies that $t_1 = t_2$. 
+	
+	Case 3: $t_1, t_2 \notin \mathbb{N}$,
+	
+	$f(t_1) = f(t_2)$
+	
+	$\implies p_1^{2r_1} \cdots p_N^{2r_N} \cdot q_1^{2s_1 - 1} \cdots q_M^{2s_M - 1} = w_1^{2y_1} \cdots w_N^{2y_N} \cdot x_1^{2z_1 - 1} \cdots x_M^{2z_M - 1}$
+	
+	$\implies \frac{ p_1^{2r_1} \cdots p_N^{2r_N}}{q_1^{1 - 2s_1} \cdots q_M^{1 - 2s_M}} = \frac{w_1^{2y_1} \cdots w_N^{2y_N}}{x_1^{1 - 2z_1} \cdots x_M^{1 - 2z_M}}$,
+	
+	but once again the primes and exponents must be the same since they are all unique, so $t_1 = t_2$. 
+	Thus, $f$ is injective. 
+	
+	Next, we show that $f$ is surjective. 
+	
+	We want to prove that for any $n\in\mathbb{N}$, $\exists q \in \mathbb{Q}, q>0$ such that $f(q) = n$. We again consider three cases:
+	
+	Case 1: $n=1$, then we simply have $q=1$ since $f(1)=1$ by definition.
+	
+	Case 2: $n=p_1^{2r_1}\cdots p_N^{2r_N}$,
+	
+	$\implies n = \left(p_1^{r_1} \cdots p_N^{r_N}\right)^2$
+	
+	$\implies \sqrt{n} = p_1^{r_1} \cdots p_N^{r_N}$, 
+	
+	since $q>0$. By part (1) of the theorem, these primes and exponents are unique for $q\in\mathbb{N}$, so $n^2=q$ for $q>0$ and $q\in\mathbb{N}$. Then $f(q) = f(p_1^{r_1} \cdots p_N^{r_N}) = n$.
+	
+	Case 3: $n= p_1^{2r_1} \cdots p_N^{2r_N} \cdot q_1^{2s_1 - 1} \cdots q_M^{2s_M - 1}$,
+	
+	$\implies n = \frac{ p_1^{2r_1} \cdots p_N^{2r_N}}{q_1^{1 - 2s_1} \cdots q_M^{1 - 2s_M}}$,
+	
+	so by part (2) of the theorem, this corresponds to a unique $q\in\mathbb{N}$ where $q=\frac{p_1^{r_1}\cdots p_N^{r_N}}{q_1^{s_1}\cdots q_N^{s_N}}$. Therefore, $f$ is surjective as well. 
+	
+	Hence $f$ is both injective and surjective, so we conclude that $f$ is bijective.
 \end{proof}
 
 \end{document}
