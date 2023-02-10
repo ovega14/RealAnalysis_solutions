@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\usepackage[]{amsmath}
+\usepackage[parfill]{parskip} %avoid indent when skipping lines
+
+\title{18.100A Assignment 2}
+\author{Octavio Vega}
+\date\today
+
+\begin{document}
+\maketitle
+	
+\section*{Problem 1}
+\begin{proof}
+	(By contradiction).
+	
+	Suppose instead that $xy \leq xz$. Then
+	
+	$\implies xy - xz \leq 0$
+	
+	$\implies x(y-z) \leq 0$.
+	
+	Since $x<0$ by assumption, it must then be true that $y-z\geq 0$. But then
+	
+	$\implies y \geq z \quad \Rightarrow\Leftarrow$,
+	
+	which is a contradiction since we assumed that $y<z$. Thus, $xy>xz$.
+\end{proof}
+	
+\end{document}
