@@ -95,6 +95,24 @@
 	\end{align} 
 	Dividing both sides of \eqref{amgm} by 2, we obtain the desired result: $\sqrt{xy} \leq \frac{x + y}{2}$.
 \end{proof}
-\subsection{(b)}
+\subsection*{(b)}
+\begin{proof}
+	($\Rightarrow$) Suppose $\sqrt{xy} = \frac{x+y}{2}$. Then
+	\begin{align}
+		&\implies 2\sqrt{xy} - x - y = 0 \\
+		&\implies x + y - 2\sqrt{xy} = 0 \\
+		&\implies \left(\sqrt{x} - \sqrt{y}\right)^2 = 0 \\
+		&\implies \sqrt{x} - \sqrt{y} = 0 \\
+		&\implies \sqrt{x} = \sqrt{y} \\
+		&\implies x = y.
+	\end{align}
+	($\Leftarrow$) Suppose $x=y$. Then
+	\begin{align}
+		\frac{x+y}{2} &= \frac{x+x}{2} = x \\
+		&= \sqrt{x}\cdot \sqrt{x} = \sqrt{x}\cdot \sqrt{y}\\
+		&= \sqrt{xy}.
+	\end{align}
+	Thus, $\frac{x+y}{2}=\sqrt{xy} \iff x=y$.
+\end{proof}
 
 \end{document}
