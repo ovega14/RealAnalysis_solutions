@@ -69,5 +69,18 @@
 	
 	Therefore $b = \sup{A}$, as desired. 
 \end{proof}
+
+\section*{Problem 4}
+\begin{proof}
+	Suppose $\sup{A}\notin A$, and let $x_0 \in A$. Towards a contradiction, suppose that $\forall x \in A$, $x \leq x_0$. Then $x_0$ is an upper bound for $A$.
 	
+	Since $x_0 \in A$, then by problem 3, $x_0 = \sup{A}$. But we assumed $\sup{A} \notin A$, so contradiction.
+	
+	So for any $x_0 \in A$, $\exists x_1$ such that $x_1 > x_0$. We can repeat the logic above to show that this holds for arbitrary $x_i \in A$, since no $x_i$ can both be an upper bound for $A$ while also being contained in $A$. Thus $\forall x_i \in A$, $\exists x_{i+1}$ such that $x_i < x_{i+1}$. 
+	
+	So we obtain an infinite decreasing sequence $\{x_i\}_{i \in \mathbb{N}}$ of elements of $A$. Hence, these elements form a countably infinite subset of $A$, since $|\{x_i | i \in \mathbb{N}\}| = |\mathbb{N}|$.
+	
+	Therefore, $A$ does indeed contain a countably infinite subset.
+\end{proof}
+
 \end{document}
