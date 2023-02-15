@@ -26,5 +26,39 @@
 	
 	So $x<i<y$ with $i \in \mathbb{R} \backslash \mathbb{Q}$, as desired.
 \end{proof}
+
+\section*{Problem 2}
+\begin{proof}
+	Define the function $f: E\longrightarrow \wp(\mathbb{N})$ such that if $x=0.d_{-1}d_{-2}...$, then 
+	\begin{equation}
+		f(x) = \{j \in \mathbb{N} \;|\; d_{-j} = 2\}.
+	\end{equation}
+	We want to show that $f$ is a bijection. First, we show that $f$ is injective.
 	
+	Let $x_1=0.d_{-1}^{(1)}d_{-2}^{(1)}...$ and $x_2=0.d_{-1}^{(2)}d_{-2}^{(2)}...$ for $x_1, x_2 \in E$. Suppose $f(x_1) = f(x_2)$. Then
+	\begin{equation}
+		\{j\in\mathbb{N} \;|\; d_{-j}^{(1)}=2\} = \{k\in\mathbb{N} \;|\; d_{-k}^{(2)}=2\}.
+	\end{equation}
+	Since each digit $d_{-j}\in\{1, 2\}$, then the sets of digits must be the same:
+	\begin{equation}
+		\{d_{-j}^{(1)} \;|\; j\in\mathbb{N}\} = \{d_{-k}^{(2)} \;|\; k\in\mathbb{N}\}.
+	\end{equation}
+	But by the theorem from class, we know that for every set of digits $\exists ! x\in[0,1]$ such that $x=0.d_{-1}d_{-2}...$. So if all of the digits are the same, then the numbers must be the same, i.e.
+	\begin{equation}
+		f(x_1) = f(x_2) \implies x_1 = x_2.
+	\end{equation}
+	Thus $f$ is injective.
+	
+	Next, we show that $f$ is surjective. 
+	
+	Let $S\in\wp(\mathbb{N})$ with
+	\begin{equation}
+		S:=\{j\in\mathbb{N} \;|\; d_{-j}=2\}.
+	\end{equation}
+	 Since this is a set of digits, then by the theorem from class $\exists x\in [0,1]$ such that $x=0.d_{-1}d_{-2}...$; i.e. for any $S\in\wp(\mathbb{N})$, $\exists x\in E$ such that $f(x) = S$. 
+	 
+	 Hence, $f$ is also surjective, which means that it is bijective.
+	 
+	 Therefore we conclude that $|E|=|\wp(\mathbb{N})|$.
+\end{proof}
 \end{document}
