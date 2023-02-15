@@ -14,6 +14,17 @@
 \maketitle
 	
 \section*{Problem 1}
-
+\begin{proof}
+	Let $x,y \in \mathbb{R}$. By the density of $\mathbb{Q}$, we have that $\exists r \in \mathbb{Q}$ such that $x<r<y$. 
+	
+	Then $x+\sqrt{2} < y + \sqrt{2}$. Then $\exists r \in \mathbb{Q}$ such that
+	\begin{align}
+		x + \sqrt{2} < r < y + \sqrt{2} \\
+		\implies x < r - \sqrt{2} < y.
+	\end{align}
+	But since $r \in \mathbb{Q}$ and $\sqrt{2} \notin \mathbb{Q}$, then the number $i := r-\sqrt{2} \notin \mathbb{Q}$.
+	
+	So $x<i<y$ with $i \in \mathbb{R} \backslash \mathbb{Q}$, as desired.
+\end{proof}
 	
 \end{document}
