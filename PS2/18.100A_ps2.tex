@@ -130,7 +130,32 @@
 \end{proof}
 
 \subsection*{(b)}
-TODO TODO TODO
+\begin{proof}
+	Let $\epsilon > 0$. By definition of supremum, $\exists x \in A$, $y\in B$ such that $x + \frac{\epsilon}{2} > \sup{A}$ and $y + \frac{\epsilon}{2} > \sup{B}$. Then
+	\begin{align}
+		x + y + \epsilon &= \left(x+\frac{\epsilon}{2}\right) + \left(y+\frac{\epsilon}{2}\right) \\
+		&> \sup{A} + \sup{B}.
+	\end{align} 
+	So for every $\epsilon >0$, $\exists c = x+y \in C$ such that 
+	\begin{equation}
+		c + \epsilon > \sup{A} + \sup{B}. 
+	\end{equation}
+	Then we conclude that $\sup{C} = \sup{A} + \sup{B}$. 
+\end{proof}
+
+\subsection*{(c)}
+\begin{proof}
+	Let $\epsilon > 0$. By definition of infimum, $\exists x \in A$, $y\in B$ such that $x - \frac{\epsilon}{2} < \inf{A}$ and $y - \frac{\epsilon}{2} < \inf{B}$. Then
+	\begin{align}
+		x + y - \epsilon &= \left(x-\frac{\epsilon}{2}\right) + \left(y-\frac{\epsilon}{2}\right) \\
+		&< \inf{A} + \inf{B}.
+	\end{align} 
+	So for every $\epsilon >0$, $\exists c = x+y \in C$ such that 
+	\begin{equation}
+		c - \epsilon < \inf{A} + \inf{B}. 
+	\end{equation}
+	Then we conclude that $\inf{C} = \inf{A} + \inf{B}$.
+\end{proof}
 
 \section*{Problem 7}
 \subsection*{(a)}
