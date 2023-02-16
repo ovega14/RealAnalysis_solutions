@@ -29,7 +29,7 @@ For questions or concerns, feel free to contact me at <vega00087@alum.mit.edu>.
 
 ### Acknowledgments
 
-1. Special thanks to [MIT OCW] (https://ocw.mit.edu) for making available the full lecture videos, lecture notes, and assignments for this course as well as for many others published online. I hope to see more advanced mathematics courses with full materials published on OCW in the future.
+1. Special thanks to [MIT OCW](https://ocw.mit.edu) for making available the full lecture videos, lecture notes, and assignments for this course as well as for many others published online. I hope to see more advanced mathematics courses with full materials published on OCW in the future.
 
 *Please **Star** if you find this resource helpful!*
 
