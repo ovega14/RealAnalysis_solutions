@@ -15,7 +15,7 @@
 	
 \section*{Problem 1}
 \begin{proof}
-	Let $x,y \in \mathbb{R}$. By the density of $\mathbb{Q}$, we have that $\exists r \in \mathbb{Q}$ such that $x<r<y$. 
+	Let $x,y \in \mathbb{R}$ with $x<y$. By the density of $\mathbb{Q}$, we have that $\exists r \in \mathbb{Q}$ such that $x<r<y$. 
 	
 	Then $x+\sqrt{2} < y + \sqrt{2}$. Then $\exists r \in \mathbb{Q}$ such that
 	\begin{align}
@@ -26,10 +26,10 @@
 	
 	So $x<i<y$ with $i \in \mathbb{R} \backslash \mathbb{Q}$, as desired.
 \end{proof}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 2}
 \begin{proof}
-	Define the function $f: E\longrightarrow \wp(\mathbb{N})$ such that if $x=0.d_{-1}d_{-2}...$, then 
+	Define the function $f: E\rightarrow \wp(\mathbb{N})$ such that if $x=0.d_{-1}d_{-2}...$, then 
 	\begin{equation}
 		f(x) = \{j \in \mathbb{N} \;|\; d_{-j} = 2\}.
 	\end{equation}
@@ -55,10 +55,73 @@
 	\begin{equation}
 		S:=\{j\in\mathbb{N} \;|\; d_{-j}=2\}.
 	\end{equation}
-	 Since this is a set of digits, then by the theorem from class $\exists x\in [0,1]$ such that $x=0.d_{-1}d_{-2}...$; i.e. for any $S\in\wp(\mathbb{N})$, $\exists x\in E$ such that $f(x) = S$. 
+	 Since this corresponds to the indices for a set of digits, then by the theorem from class $\exists x\in [0,1]$ such that $x=0.d_{-1}d_{-2}...$; i.e. for any $S\in\wp(\mathbb{N})$, $\exists x\in E$ such that $f(x) = S$. 
 	 
 	 Hence, $f$ is also surjective, which means that it is bijective.
 	 
 	 Therefore we conclude that $|E|=|\wp(\mathbb{N})|$.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\subsection*{(a)}
+\begin{proof}
+	We want to show that there exists a bijection $h: A\cup B\rightarrow \mathbb{N}$. 
+	
+	Recall that we can construct the sets of even and odd natural numbers as follows:
+	\begin{equation}
+		\mathcal{O} := \{2n+1 \;|\; n\in \mathbb{N}\} \textrm{, and } \mathcal{E}:=\{2n \;|\; n\in\mathbb{N}\}.
+	\end{equation}
+	We also know that $|\mathcal{O}| = |\mathcal{E}| = |\mathbb{N}|$ because the functions defined via $f_e(n)=2n$ and $f_o(n)=2n+1$, mapping $\mathcal{E}$ to $\mathbb{N}$ and $\mathcal{O}$ to $\mathbb{N}$, respectively, are both bijective. Finally, we note that $\mathcal{O}\cup\mathcal{E} = \mathbb{N}$.
+	
+	Since $A$ and $B$ are both countably infinite, i.e. $|A|=|B|=|\mathbb{N}|$, then $\exists$ bijections $f,g$ such that 
+	\begin{equation}
+		f: a\rightarrow \mathbb{N} \textrm{, and } g:B\rightarrow\mathbb{N}.
+	\end{equation}
+	Then $\forall a \in A$, $2f(a)$ is even, and $\forall b \in B$, $2g(b)+1$ is odd. So we define the even and odd sets
+	\begin{equation}
+		\mathcal{E} := \{2f(a) \;|\; a \in A\} \textrm{, and } \mathcal{O} := \{2g(b)+1 \;|\; b \in B\}.
+	\end{equation}
+	Then we construct the function $h$ defined via
+	\begin{equation}
+		h(x)=
+		\begin{cases}
+			2f(x) & \text{if } x \in A\\
+			2g(x)+1 & \text{if } x \in B.
+		\end{cases}
+	\end{equation}
+	First, we show that $h$ is injective.
+	
+	\underline{Case 1}: $x,y\in A$. Then 
+	\begin{align}
+		&\quad h(x) = h(y) \\
+		&\implies 2f(x) = 2f(y) \\
+		&\implies f(x) = f(y) \\
+		&\implies x = y,
+	\end{align}
+	Since $f$ is injective.
+	
+	\underline{Case 2}: $x,y\in B$. Then
+	\begin{align}
+		&\quad h(x) = h(y) \\
+		&\implies 2g(x) + 1 = 2g(y) + 1 \\
+		&\implies g(x) = g(y) \\
+		&\implies x = y,
+	\end{align}
+	since $g$ is injective. 
+	
+	\underline{Case 3}: $x\in A$, $y\in B$ WOLOG, and $h(x)=h(y)$. This case is vacuous because $\mathcal{E}$ and $\mathcal{O}$ are disjoint, whereas $2f(x)\in\mathcal{E}$ while $2g(x) + 1 \in\mathcal{O}$.
+	
+	Thus, according to cases 1 and 2, $h$ is injective.
+	
+	Now we show that $h$ is surjective. Let $n\in\mathbb{N}$.
+	
+	\underline{Case 1}: $n$ is even. Then by surjectivity of $f$, $\exists a \in A$ such that $f(a)=\frac{n}{2}$, i.e. $h(a)=n$.
+	
+	\underline{Case 2}: $n$ is odd. Then by surjectivity of $g$, $\exists b \in B$ such that $g(b)=\frac{n-1}{2}$, i.e. $h(b)=n$.
+	
+	Thus, $h$ is surjective as well.
+	
+	Therefore we conclude that $h$ is a bijection, hence $|A\cup B| = |\mathbb{N}|$.
+\end{proof}
+
 \end{document}
