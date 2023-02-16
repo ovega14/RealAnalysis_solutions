@@ -136,4 +136,18 @@
 	Hence $\mathbb{R}\backslash\mathbb{Q}$ must be uncountable.
 \end{proof}
 
+\section*{Problem 4}
+\begin{proof}
+	($\Rightarrow$) Suppose $a_0 = \sup{A}$. Then for any other upper bound $b \in \mathbb{R}$ of $A$, $a_0 \leq b$. Also, for any $a\in A$, $a \leq a_0$.
+	
+	Let $\epsilon>0$. Then $a_0 + \epsilon > a_0 \implies a_0 - \epsilon < a_0$, but $a_0 = \sup{A}$ so $a_0 - \epsilon \neq \sup{A}$.  Then $\exists a \in A$ such that $a>a_0 - \epsilon$.
+	
+	($\Leftarrow$) Suppose $a_0$ is an upper bound for $A\subset\mathbb{R}$, and that for every $\epsilon > 0$ $\exists a\in A$ such that $a_0 - \epsilon < a$. Since $A$ is bounded above by $a_0$, then $\forall a \in A$, $a\leq a_0$. Then for every $\epsilon>0$,
+	\begin{align}
+		&\implies a-\epsilon \leq a_0 - \epsilon < a \\
+		&\implies a \leq a_0 < a + \epsilon. 
+	\end{align}
+	But $a_0$ is an upper bound for $A$, so we have shown that for any $\epsilon>0$, $\exists a \in A$ such that $a+\epsilon \notin A$ and $a_0 < a + \epsilon$. Thus $a_0$ is the smallest upper bound for $A$, which means that $a_0=\sup{A}$ by definition.
+\end{proof}
+
 \end{document}
