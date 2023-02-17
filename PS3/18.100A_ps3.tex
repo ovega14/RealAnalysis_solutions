@@ -181,4 +181,16 @@
 	Therefore, $(b, \infty)$ is closed. 
 \end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Suppose $U_{\lambda}\subset \mathbb{R}$ is open $\forall \lambda \in \Lambda$. 
+	
+	Take any $x\in\bigcup_{\lambda\in\Lambda}U_{\lambda}$. Then $x\in U_{\lambda}$ for at least one $\lambda\in\Lambda$. But since the $U_{\lambda}$ are open, then $\exists \epsilon >0$ such that $(x-\epsilon, x+\epsilon)\subset U_{\lambda}$. 
+	
+	But this must hold for every $x\in\bigcup_{\lambda\in\Lambda}U_{\lambda}$, i.e. for every such $x$, $\exists \epsilon>0$ such that
+	\begin{equation}
+		(x-\epsilon, x+\epsilon)\subset \bigcup_{\lambda\in\Lambda}U_{\lambda}.
+	\end{equation} 
+	Therefore, the union must also be open.
+\end{proof}
 \end{document}
