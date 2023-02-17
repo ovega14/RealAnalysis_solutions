@@ -150,4 +150,35 @@
 	But $a_0$ is an upper bound for $A$, so we have shown that for any $\epsilon>0$, $\exists a \in A$ such that $a+\epsilon \notin A$ and $a_0 < a + \epsilon$. Thus $a_0$ is the smallest upper bound for $A$, which means that $a_0=\sup{A}$ by definition.
 \end{proof}
 
+\section*{Problem 5}
+\subsection*{(a)}
+\begin{proof}
+	(i) Let $\epsilon>0$. Then $a-\epsilon < a \implies a-\epsilon \in (-\infty, a)$.
+	Since $(-\infty, a)$ is not bounded below, $\exists x \in (-\infty, a)$ such that $-\infty < x < a-\epsilon$, i.e. $-\infty < x+\epsilon<a$. 
+	
+	Also, for $\epsilon>0$ and $x\in(-\infty,a)$, it holds that $-\infty<x-\epsilon<a$. So
+	\begin{equation}
+		(x-\epsilon, x+\epsilon) \subset (-\infty,a).
+	\end{equation}
+	Therefore, $(-\infty, a)$ is open.
+	
+	(ii) $\forall x \in (a,b)$, we have that $b-x>0$ and $x-a>0$. Let $\epsilon = \frac{1}{2}\min\{x-a, b-x\}>0$, and let $y\in\mathbb{R}$.
+	
+	If $y\in(x-\epsilon, x+\epsilon)$, then $-\epsilon<y-x<\epsilon$. But $\epsilon < b-x \implies y-x < b-x$, i.e. $y<b$.
+	
+	Also, $\epsilon < x-a\implies -\epsilon>a-x$, so $y-x>a-x$, i.e. $y>a$. Thus, $a<y<b$ $\forall y\in(x-\epsilon, x+\epsilon)$.
+	
+	Therefore, $(a,b)$ is open.
+	
+	(iii) Let $x\in (b, \infty)$. Then $x>b$. Let $\epsilon = \frac{x-b}{2}>0$, and let $y\in\mathbb{R}$. 
+	
+	If $y\in(x-\epsilon, x+\epsilon)$, then $-\epsilon<y-x<\epsilon$. Since $\epsilon<x-b \implies -\epsilon>b-x$, 
+	\begin{align}
+		&\implies b-x<y-x<x-b \\
+		&\implies b<y<2x-b< \infty \\
+		&\implies y \in (b, \infty).
+	\end{align}
+	Therefore, $(b, \infty)$ is closed. 
+\end{proof}
+
 \end{document}
