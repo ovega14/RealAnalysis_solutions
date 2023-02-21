@@ -205,4 +205,26 @@
 	Therefore, the intersection must also be open. 
 \end{proof}
 
+\subsection*{(d)}
+\underline{Claim:} The set of rationals $\mathbb{Q} \subset \mathbb{R}$ is NOT open.
+\begin{proof}
+	(By contradiction). Suppose instead that $\mathbb{Q}$ is open. 
+	
+	Then for every $q \in \mathbb{Q}$, $\exists \epsilon>0$ such that
+	\begin{equation}
+		(q-\epsilon, q+\epsilon) \subset \mathbb{Q}.
+	\end{equation}
+	Since $q-\epsilon, q+\epsilon \in \mathbb{R}$ and $q-\epsilon < q+\epsilon$, then $\exists i \in \mathbb{R} \backslash \mathbb{Q}$ such that 
+	\begin{equation}
+		q-\epsilon<i<q+\epsilon,
+	\end{equation}
+	as proven in problem 1. Then since there is an irrational number $i \in (q-\epsilon, q+\epsilon)$, this implies 
+	\begin{equation}
+		(q-\epsilon, q+\epsilon) \not\subset \mathbb{Q}, \quad (\Rightarrow \Leftarrow)
+	\end{equation}
+	which is a contradiction to the initial assumption. 
+	
+	Therefore, $\mathbb{Q}$ is not open. 
+\end{proof}
+
 \end{document}
