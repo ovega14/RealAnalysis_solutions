@@ -227,4 +227,16 @@
 	Therefore, $\mathbb{Q}$ is not open. 
 \end{proof}
 
+\section*{Problem 6}
+\begin{proof}
+	Let $\epsilon >0$. Choose $N=\sqrt{\frac{1}{20\epsilon}}$. Then for $n > N$, we have
+	\begin{align}
+		\left|\frac{1}{20n^2+20n + 2020}-0\right| &< \left|\frac{1}{20\left(\frac{1}{20\epsilon}\right) + \frac{20}{\sqrt{20\epsilon}} + 2020}\right| \\
+		&<\left|\frac{1}{\frac{1}{\epsilon}+2020}\right| \\
+		&< \frac{1}{\frac{1}{\epsilon}} \\
+		&= \epsilon.
+	\end{align}
+	Therefore, $\lim\limits_{n\to\infty}\frac{1}{20n^2+20n+2020} = 0$.
+\end{proof}
+
 \end{document}
