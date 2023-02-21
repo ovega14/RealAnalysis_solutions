@@ -193,4 +193,16 @@
 	\end{equation} 
 	Therefore, the union must also be open.
 \end{proof}
+
+\subsection*{(c)}
+\begin{proof}
+	Suppose $U_m$ is open $\forall m \in \{1, ..., n\}$. Choose any $x\in\bigcap_{m=1}^{n}U_m$. Then if $x$ is in the intersection of the sets, it must be in each of the sets, i.e. \\$x\in U_1, U_2, ..., U_n$.
+	
+	Since the $U_m$ are open, then $\exists \epsilon>0$ such that $(x-\epsilon, x+\epsilon)\subset U_m$ $\forall m \in \{1, ..., m\}$. But this must hold for every $x$ in the intersection, i.e. $\forall x \in \bigcap_{m=1}^n U_m$, $\exists \epsilon>0$ such that
+	\begin{equation}
+		(x-\epsilon, x+\epsilon)\subset \bigcap_{m=1}^{n} U_m.
+	\end{equation}  
+	Therefore, the intersection must also be open. 
+\end{proof}
+
 \end{document}
