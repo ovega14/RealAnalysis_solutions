@@ -41,6 +41,7 @@
 \end{proof}
 
 \subsection*{(b)}
+\underline{Claim:} The set $\mathbb{Z}\subset\mathbb{R}$ is closed.
 \begin{proof}
 	Consider the complement of the integers in the real numbers, $\mathbb{Z}^c = \mathbb{R}\backslash\mathbb{Z}$. We may write this complement as a union of open sets, where each of the open sets represents the set of numbers between (but not including) consecutive integers:
 	\begin{equation}
@@ -52,6 +53,7 @@
 \end{proof}
 
 \subsection*{(c)}
+\underline{Claim:} The set of rationals $\mathbb{Q}\subset\mathbb{R}$ is not closed.
 \begin{proof}
 	The complement of the rational numbers $\mathbb{Q}$ in the reals is the set of irrationals:
 	\begin{equation}
@@ -63,4 +65,29 @@
 	
 	Therefore, $\mathbb{Q}$ is not closed.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 2}
+\subsection*{(a)}
+TODO TODO TODO 
+\subsection*{(b)}
+\begin{proof}
+	Let $x \notin \bigcup_{m=1}^n F_m$. Then
+	\begin{equation}\label{union_complement}
+		x \in \left(\bigcup\limits_{m=1}^n F_m\right)^c \implies x \in \bigcap\limits_{m=1}^n F_m^c.
+	\end{equation}
+	So $\forall m \in \{1, ..., n\}$, $x\in F_m^c$. Similarly,
+	\begin{equation}\label{intersect_complement}
+		x \in \bigcap\limits_{m=1}^n F_m^c \implies x \in \left(\bigcup\limits_{m=1}^n F_m\right)^c. 
+	\end{equation}
+	[\textit{Intuition}: If $x$ is in the complement of the union of several sets, then it can't be in any of them individually (it must simultaneously be in none of them), which means that it must be in the intersection of the complements of each of the sets. Likewise, if $x$ is in the intersection of the complements of several sets, then it must be in none of the individual sets, so it has to be outside the union of all the sets.]
+	
+	Equations \eqref{union_complement} and \eqref{intersect_complement} imply $\left(\bigcup_{m=1}^n F_m\right)^c \subseteq \bigcap_{m=1}^n F_m^c$ and $\bigcap_{m=1}^n F_m^c \subseteq \left(\bigcup_{m=1}^n F_m\right)^c$, respectively. Then
+	\begin{equation}\label{sets_equal}
+		\left(\bigcup\limits_{m=1}^n F_m\right)^c = \bigcap\limits_{m=1}^n F_m^c.
+	\end{equation}
+	Since $F_m$ is closed, then $F_m^c$ is open. Then the intersection $\bigcap_{m=1}^n F_m^c$ must be open, which implies by \eqref{sets_equal} that $\left(\bigcup_{m=1}^n F_m\right)^c$ is open.
+	
+	Therefore, $\bigcup_{m=1}^n F_m$ is closed.
+\end{proof}
+
 \end{document}
