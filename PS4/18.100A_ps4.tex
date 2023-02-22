@@ -68,7 +68,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 2}
 \subsection*{(a)}
-TODO TODO TODO 
+\begin{proof}
+	Let $x \notin \bigcap_{\lambda \in \Lambda} F_{\lambda}$. Then $x\in\left(\bigcap_{\lambda\in\Lambda}F_{\lambda}\right)^c$, so
+	\begin{equation}
+		x \in \bigcup\limits_{\lambda \in \Lambda}F_{\lambda}^c.
+	\end{equation}
+	So for at least one $\lambda \in \Lambda$, $x\in F_{\lambda}^c$.
+	
+	Since $F_{\lambda}$ is closed, then $F_{\lambda}^c$ is open. Thus $\exists \epsilon>0$ such that $(x-\epsilon, x+\epsilon)\subset F_{\lambda}^c$. But since this must hold for arbitrary $x$, then it holds for every \\$x\in \left(\bigcap_{\lambda\in\Lambda}F_{\lambda}\right)^c$. 
+	
+	Hence, $\left(\bigcap_{\lambda\in\Lambda}F_{\lambda}\right)^c$ is open $\implies \bigcap_{\lambda\in\Lambda}F_{\lambda}$ is closed.
+\end{proof}
+
 \subsection*{(b)}
 \begin{proof}
 	Let $x \notin \bigcup_{m=1}^n F_m$. Then
@@ -89,5 +100,6 @@ TODO TODO TODO
 	
 	Therefore, $\bigcup_{m=1}^n F_m$ is closed.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
