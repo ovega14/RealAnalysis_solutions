@@ -5,6 +5,16 @@
 \usepackage[]{amssymb} %gives us the character \varnothing
 \usepackage[]{amsmath}
 \usepackage[parfill]{parskip} %avoid indent when skipping lines
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={18.100A-ps4},
+	pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
 
 \title{18.100A Assignment 4}
 \author{Octavio Vega}
@@ -25,7 +35,7 @@
 		[a,b]^c &= \{x\in\mathbb{R} \;|\; x<a \} \cup \{x\in\mathbb{R} \;|\; x>b \} \\
 		&= (-\infty, a) \cup (b, \infty).
 	\end{align}
-	Both the sets $(-\infty, a)$ and $(b, \infty)$ are open, as proved in assignment 3. We also proved that the union of open sets is open. Thus, $[a,b]^c$ is open.
+	Both the sets $(-\infty, a)$ and $(b, \infty)$ are open, as proved in \href{https://github.com/ovega14/RealAnalysis_solutions/blob/main/PS3/18.100A_ps3.pdf}{PS3.5a}. We also proved that the union of open sets is open. Thus, $[a,b]^c$ is open.
 	
 	Therefore, we conclude that $[a,b]$ is closed.
 \end{proof}
@@ -39,5 +49,18 @@
 	Since the sets being unioned are all open, then so is the union, i.e. $\mathbb{Z}^c$ is open.
 	
 	Thus, $\mathbb{Z}$ is closed.
+\end{proof}
+
+\subsection*{(c)}
+\begin{proof}
+	The complement of the rational numbers $\mathbb{Q}$ in the reals is the set of irrationals:
+	\begin{equation}
+		\mathbb{Q}^c = \mathbb{R} \backslash \mathbb{Q}.
+	\end{equation}
+	Let $i \in \mathbb{Q}^c$. In class, we proved the density of $\mathbb{Q}$ in $\mathbb{R}$. Additionally, in \href{https://github.com/ovega14/RealAnalysis_solutions/blob/main/PS3/18.100A_ps3.pdf}{PS3.1}, we proved the density of the irrationals in $\mathbb{R}$. It follows that $\exists q, r \in \mathbb{Q}$ such that $q<i<r$.
+	
+	Let $\epsilon>0$. Since $i-\epsilon, i+\epsilon \in \mathbb{R}$, then $\exists p\in\mathbb{Q}$ such that $i-\epsilon<p<i+\epsilon$. This implies that $p\in(q,r)$, but $p \in \mathbb{Q} \implies p\notin \mathbb{Q}^c$, so $\mathbb{Q}^c$ is not open.
+	
+	Therefore, $\mathbb{Q}$ is not closed.
 \end{proof}
 \end{document}
