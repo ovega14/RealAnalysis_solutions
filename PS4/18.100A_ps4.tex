@@ -14,6 +14,20 @@
 \maketitle
 
 \section*{Problem 1}
-TODO TODO TODO
+\subsection*{(a)}
+\begin{proof}
+	Define the complement of $[a,b]$ via
+	\begin{equation}
+		[a,b]^c := \{x\in\mathbb{R} \;|\; x<a, \; x>b\}.
+	\end{equation}
+	We can write this complement as the union of two sets:
+	\begin{align}
+		[a,b]^c &= \{x\in\mathbb{R} \;|\; x<a \} \cup \{x\in\mathbb{R} \;|\; x>b \} \\
+		&= (-\infty, a) \cup (b, \infty).
+	\end{align}
+	Both the sets $(-\infty, a)$ and $(b, \infty)$ are open, as proved in assignment 3. We also proved that the union of open sets is open. Thus, $[a,b]^c$ is open.
 	
+	Therefore, we conclude that $[a,b]$ is closed.
+\end{proof}
+
 \end{document}
