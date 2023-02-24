@@ -190,5 +190,36 @@
 	Therefore, we conclude $a_0=\sup{A}$.  
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 7}
+\subsection*{(a)}
+\begin{proof}
+	($\Rightarrow$) Suppose $x$ is a cluster point of $E$. Then for any $\epsilon>0$,
+	\begin{equation}
+		(x-\epsilon, x+\epsilon)\cap E \backslash\{x\} \neq \emptyset.
+	\end{equation}
+	Let $x_n \in (x-\epsilon, x+\epsilon)$ with $x_n \neq x$. Choose $\epsilon<\frac{1}{n}$ for $n\in\mathbb{N}$. Then
+	\begin{align}
+		&\implies x-\frac{1}{n} < x-\epsilon<x_n<x+\epsilon<x+\frac{1}{n} \\
+		&\implies -\frac{1}{n}<x_n-x<\frac{1}{n} \\
+		&\implies 0 < |x_n - x| < \frac{1}{n}.
+	\end{align}
+	But $\frac{1}{n} \rightarrow 0$, so by the Squeeze Theorem, $x_n \rightarrow x$.
+	
+	Since this is true for every $n\in\mathbb{N}$  and holds for any $x_n\in(x-\epsilon, x+\epsilon)$, then $\exists$ a sequence $\{x_n\}_n$ such that $\lim_{n\to\infty}x_n=x$.
+	
+	($\Leftarrow$) Suppose $\exists$ a sequence $\{x_n\}_n$ of elements of $E\backslash\{x\}$ such that \\$\lim_{n\to\infty}x_n=x$. 
+	
+	Then for every $\epsilon>0$, $\exists M\in\mathbb{N}$ such that $\forall n\geq M$, $|x_n-x|<\epsilon$. Then
+	\begin{equation}
+		x-\epsilon<x_n<x+\epsilon.
+	\end{equation}
+	So for every $\epsilon>0$, $\exists x_n \in E$ such that $x_n \in (x-\epsilon, x+\epsilon)$. Then since $x_n \neq x$, we have
+	\begin{equation}
+		x_n \in (x-\epsilon, x+\epsilon)\cap E \backslash \{x\}.
+	\end{equation}
+	Thus, $(x-\epsilon, x+\epsilon)\cap E \backslash\{x\}\neq\emptyset$.
+	
+	Therefore, we conclude that $x$ is a cluster point of $E$.
+\end{proof}
 
 \end{document}
