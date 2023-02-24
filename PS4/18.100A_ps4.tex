@@ -101,5 +101,17 @@
 	Therefore, $\bigcup_{m=1}^n F_m$ is closed.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section*{Problem 3}
+\begin{proof}
+	(By contradiction). Suppose instead that $x \in F^c$. Since $F$ is closed, then $F^c$ is open. Then $\exists \epsilon > 0$ such that $(x-\epsilon, x+\epsilon) \subset F^c$. 
+	
+	Since $\{x_n\}$ converges to $x$, then $\lim_{n\to\infty}x_n = x$. So for every $\epsilon > 0$, $\exists N \in \mathbb{N}$ such that $\forall n > N$, $|x_n-x|<\epsilon$. Then for $n>N$, 
+	\begin{equation}
+		x-\epsilon < x_n<x+\epsilon.
+	\end{equation}
+	But then $\forall n > N$, $x_n \in (x-\epsilon, x+\epsilon)\subset F^c$, i.e. $x_n \in F^c$ ($\Rightarrow\Leftarrow$). This is a contradiction because we assumed that the elements of $\{x_n\}_n$ are in $F$. 
+	
+	Therefore, $x \in F$.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

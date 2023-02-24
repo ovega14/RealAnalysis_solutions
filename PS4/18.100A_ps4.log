@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  22 FEB 2023 13:13
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  23 FEB 2023 20:46
  restricted system commands enabled.
 **18.100A_ps4.tex
 (./18.100A_ps4.tex
@@ -522,12 +522,12 @@ Package rerunfilecheck Info: File `18.100A_ps4.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 10576 strings out of 478540
+ 10578 strings out of 478540
  125056,552014 words of node,token memory allocated
- 647 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 45 attribute, 55 gl
-ue_spec, 24 attribute_list, 1 write nodes
-   avail lists: 2:658,3:199,4:30,5:292,6:35,7:3444,8:37,9:483,10:6,11:110
+ 659 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 49 attribute, 55 gl
+ue_spec, 26 attribute_list, 1 write nodes
+   avail lists: 2:652,3:199,4:30,5:292,6:35,7:3444,8:37,9:483,10:6,11:110
  30104 multiletter control sequences out of 65536+200000
  65 fonts using 5671159 bytes
  71i,8n,71p,524b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -544,9 +544,9 @@ ublic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 18.100A_ps4.pdf (3 pages, 106195 bytes).
+Output written on 18.100A_ps4.pdf (3 pages, 110089 bytes).
 
-PDF statistics: 114 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 131072)
+PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
