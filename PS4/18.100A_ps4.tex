@@ -114,4 +114,30 @@
 	Therefore, $x \in F$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 4}
+\begin{proof}
+	(By induction on $k$). 
+
+	\underline{Base Case}: $k=1$. 
+	\begin{equation}
+		\lim_{n\to\infty}x_n^1 = \left(\lim_{n\to\infty} x_n\right)^1
+	\end{equation}
+	So, the inductive hypothesis is true for $k=1$.
+	
+	\underline{Inductive Step}: Suppose the hypothesis is true for $k=m$, i.e.
+	\begin{equation}
+		\lim_{n\to\infty}x_n^m = \left(\lim_{n\to\infty}x_n\right)^m.
+	\end{equation}
+	Then we have
+	\begin{align}
+		\lim_{n\to\infty}x_n^{m+1} &= \lim_{n\to\infty}\left(x_n^m \cdot x_n\right) \\
+		&= \lim_{n\to\infty}\left(x_n^m\right) \cdot \lim_{n\to\infty}x_n \\
+		&= \left(\lim_{n\to\infty}x_n\right)^m \cdot \lim_{n\to\infty}x_n \\
+		&= \left(\lim_{n\to\infty}x_n\right)^{m+1}.
+	\end{align}
+	Hence, the hypothesis is true for $k=m+1$.
+	
+	Therefore, we conclude that $\forall k \in \mathbb{N}$, $\lim_{n\to\infty}x_n^k = \left(\lim_{n\to\infty}x_n\right)^k$.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
