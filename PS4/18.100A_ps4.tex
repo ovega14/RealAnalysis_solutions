@@ -222,4 +222,21 @@
 	Therefore, we conclude that $x$ is a cluster point of $E$.
 \end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Define $S:=\{x\in\mathbb{R} \;|\; x \textrm{ is a cluster point of } E\}$. We want to show that $S$ is closed, i.e. that $S^c$ is open.
+	
+	Let $x\in S^c \implies x \in S$. So $x$ is not a cluster point of $E$. Then $\exists \epsilon>0$ such that $(x-\epsilon, x+\epsilon)\cap E\backslash\{x\}=\emptyset$.
+	
+	But this must hold for any $x\in S^c$, so $\forall x \in S^c$, $\exists \epsilon>0$ such that 
+	\begin{equation}
+		(x-\epsilon, x+\epsilon)\cap E \{x\} = \emptyset.
+	\end{equation}
+	But then $\forall y \in (x-\epsilon, x + \epsilon)$, $y$ is not a cluster point of $E$. So $\forall x \in S^c$, 
+	\begin{equation}
+		(x-\epsilon, x+\epsilon)\subset S^c
+	\end{equation}
+	Thus $S^c$ is open, so we conclude that $S$ is closed.
+\end{proof}
+
 \end{document}
