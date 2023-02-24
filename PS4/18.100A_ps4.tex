@@ -158,5 +158,37 @@
 	\end{equation}
 	Thus, we conclude that $x_n \rightarrow 1$.	
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 6}
+\begin{proof}
+	($\Rightarrow$) Suppose $a_0 = \sup{A}$. By \href{https://github.com/ovega14/RealAnalysis_solutions/blob/main/PS3/18.100A_ps3.pdf}{PS3.4}, then $\forall n \in \mathbb{N}$ $\exists a_n \in A$ such that 
+	\begin{equation}
+		a_0 - \frac{1}{n} < a_n \leq a_0.
+	\end{equation}
+	Rearranging, we have
+	\begin{equation}
+		-\frac{1}{n} < a_n - a_0 \leq 0.
+	\end{equation}
+	But $\lim_{n\to\infty}\left(-\frac{1}{n}\right)=0$, so by the Squeeze Theorem, $a_n - a_0 \rightarrow 0$. Then,
+	\begin{equation}
+		a_n \rightarrow a_0.
+	\end{equation}
+	($\Leftarrow$) Let $a_0$ be an upper bound for $A$. Then $\forall n \in \mathbb{N}$, $a_n \leq a_0$.
+	
+	Suppose $\exists$ a sequence $\{a_n\}_n$ of elements of $A$ such that $\lim_{n\to\infty}a_n = a_0$. Then for every $\epsilon > 0$, $\exists N\in\mathbb{N}$ such that $\forall n \geq N$, $|a_n - a_0| < \epsilon$.
+	
+	Suppose $\exists$ another upper bound $a_1$ for $A$ such that $a_1 < a_0$. Then $\forall n \in \mathbb{N}$, 
+	\begin{equation}
+		a_n \leq a_1 < a_0,
+	\end{equation}
+	which gives
+	\begin{equation}
+		0 \leq a_1 - a_n < a_0 - a_n.
+	\end{equation}
+	But since $a_n \rightarrow a_0$, then by the Squeeze Theorem, $a_n \rightarrow a_1$. But $\{a_n\}_n$ can only converge to one value, so $a_1 = a_0$ ($\Rightarrow\Leftarrow$). This is a contradiction to the initial assumption that $a_0\neq a_1$. 
+	
+	Therefore, we conclude $a_0=\sup{A}$.  
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
