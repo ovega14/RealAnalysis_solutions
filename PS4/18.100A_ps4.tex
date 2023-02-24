@@ -140,4 +140,23 @@
 	Therefore, we conclude that $\forall k \in \mathbb{N}$, $\lim_{n\to\infty}x_n^k = \left(\lim_{n\to\infty}x_n\right)^k$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\begin{proof}
+	We have that $x_n = 1 - \frac{\cos{n}}{n}$. Then 
+	\begin{align}
+		|x_n| &= |1-\frac{\cos{n}}{n}| \\
+		& \leq |1| + \frac{|\cos{n}|}{n} \\
+		& \leq 1 + \frac{1}{n}.
+	\end{align}
+	Also, $x_n = 1 - \frac{\cos{n}}{n} \geq 1 - \frac{1}{n}$, so
+	\begin{equation}
+		1-\frac{1}{n} \leq x_n \leq 1 + \frac{1}{n}.
+	\end{equation}
+	Note that $\lim_{n\to\infty}(1 - \frac{1}{n}) = \lim_{n\to\infty}(1 + \frac{1}{n}) = 1$. So by the squeeze theorem, 
+	\begin{equation}
+		\lim_{n\to\infty}x_n = 1.
+	\end{equation}
+	Thus, we conclude that $x_n \rightarrow 1$.	
+\end{proof}
+
 \end{document}
