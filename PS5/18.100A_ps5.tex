@@ -54,5 +54,18 @@
 	\end{align}
 	Therefore, $\{x_n\}_n$ converges to $x$.
 \end{proof}
-	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 2}
+\subsection*{(a)}
+Let $x_n = \frac{(-1)^n}{n}$. Then $\forall n \in \mathbb{N}$,
+\begin{equation}
+	-\frac{1}{n} \leq x_n \leq \frac{1}{n}.
+\end{equation}
+Allowing $n \to \infty$ on all sides of the inequality gives
+\begin{equation}
+	0=\lim\limits_{n\to\infty} \left(-\frac{1}{n}\right) \leq \lim_{n \to \infty} x_n \leq \lim_{n\to\infty} \left(\frac{1}{n}\right)=0.
+\end{equation}
+So by the Squeeze Theorem, $\lim_{n\to\infty} x_n = 0$. Finally, by the theorem from lecture 9, we conclude that $\lim\inf{x_n}=\lim\sup{x_n}=0$.
+
+
 \end{document}
