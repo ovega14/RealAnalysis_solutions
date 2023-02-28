@@ -5,6 +5,7 @@
 \usepackage[]{amssymb} %gives us the character \varnothing
 \usepackage[]{amsmath}
 \usepackage[parfill]{parskip} %avoid indent when skipping lines
+\usepackage{mathtools}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
@@ -24,6 +25,34 @@
 \maketitle
 
 \section*{Problem 1}
-TODO TODO TODO
+\begin{proof}
+	We have that
+	\begin{equation}
+		L = \lim\limits_{n\to\infty} \frac{|x_{n+1}-x|}{|x_n-x|} < 1.
+	\end{equation}
+	Then for every $\epsilon > 0$, $\exists N \in \mathbb{N}$ such that $\forall n \geq N$, 
+	\begin{equation}
+		\left|\frac{x_{n+1}-x}{x_n - x}\right| - 1 < \epsilon.
+	\end{equation}
+	Rearranging gives
+	\begin{equation}
+		|x_{n+1}-x| < (1+\epsilon)|x_n - x|.
+	\end{equation}
+	By taking $\epsilon$ to be arbitrarily small, we have, $\forall n \geq N$,
+	\begin{equation}
+		\xRightarrow{\epsilon \to 0} |x_{n+1}-x| < |x_n-x|.
+	\end{equation}
+	Define $y_n := |x_n - x|$. Then $\forall n \geq N$, 
+	\begin{equation}
+		0 \leq y_{n+1} < y_n,
+	\end{equation}
+	so $\{y_n\}_n$ is a decreasing sequence bounded below by $0$. Hence,
+	\begin{align}
+		&\implies y_n \rightarrow 0 \\
+		&\implies |x_n - x| \rightarrow 0 \\
+		&\implies x_n \rightarrow x.
+	\end{align}
+	Therefore, $\{x_n\}_n$ converges to $x$.
+\end{proof}
 	
 \end{document}
