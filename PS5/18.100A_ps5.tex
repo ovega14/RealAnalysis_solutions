@@ -67,5 +67,45 @@ Allowing $n \to \infty$ on all sides of the inequality gives
 \end{equation}
 So by the Squeeze Theorem, $\lim_{n\to\infty} x_n = 0$. Finally, by the theorem from lecture 9, we conclude that $\lim\inf{x_n}=\lim\sup{x_n}=0$.
 
+\subsection*{(b)}
+Let $x_n = (-1)^n\frac{(n-1)}{n}$. Define
+\begin{equation}
+	a_n := \sup\{x_k \;|\; k\geq n\} \textrm{, and } b_n := \sup\{x_k \;|\; k\geq n\}.
+\end{equation}
+Then $\forall n \in \mathbb{N}$, we have 
+\begin{align}
+	|x_n| &= \left|\frac{n-1}{n}\right| \cdot |(-1)^n| \\
+	&= \frac{n-1}{n} \\
+	&= 1-\frac{1}{n} \\
+	&\leq 1.
+\end{align}
+Thus, $x_n$ is bounded and $-1\leq x_n \leq 1$. 
 
+Let $n_k=2k$ and $m_k=2k-1$ for $k\in\mathbb{N}$. Then we construct two subsequences $\{x_{n_k}\}_k$ and $\{x_{m_k}\}_k$ of $\{x_n\}_n$ via
+\begin{equation}
+	x_{n_k} := \frac{2k-1}{2k}(-1)^{2k} = \frac{2k-1}{2k},
+\end{equation}
+and
+\begin{equation}
+	x_{m_k} := \frac{2k-2}{2k-1}(-1)^{2k-1} = \frac{2-2k}{2k-1}.
+\end{equation}
+Taking the limit of the first subsequence gives 
+\begin{equation}
+	\lim_{k \to \infty} x_{n_k} = \lim_{k \to\infty} \left(1-\frac{1}{2k}\right) = 1,
+\end{equation}
+and for the second subsequence we get
+\begin{equation}
+	\lim_{k\to\infty} x_{m_k} = \lim_{k \to \infty}\left(\frac{1}{2k-1}-1\right)=-1.
+\end{equation}
+Thus, $\{x_{n_k}\}_k$ converges to $1$, and $\{x_{m_k}\}_k$ converges to $-1$. Then \\$\sup\{x_k \;|\; k\geq n\} \geq 1$. But $-1\leq x_n \leq 1$, so it must also be true that
+\begin{equation}
+	\sup\{x_k \;|\; k\geq n\} \leq \sup x_n = 1.
+\end{equation}
+Thus, $\sup\{x_k \;|\; k\geq n\}=1$, and we can conclude that $\lim\sup x_n =1$.
+
+Similarly, $\inf\{x_k \;|\; k\geq n\}\leq -1$, but $-1\leq x_n \leq 1$, so we must have
+\begin{equation}
+	\inf \{x_k \;|\; k\geq n\} \geq \inf x_n = -1,
+\end{equation}
+so $\inf \{x_k \;|\; k\geq n\}=1$. Therefore, we conclude also that $\lim\inf x_n = -1$.
 \end{document}
