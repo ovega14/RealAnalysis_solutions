@@ -107,5 +107,29 @@ Similarly, $\inf\{x_k \;|\; k\geq n\}\leq -1$, but $-1\leq x_n \leq 1$, so we mu
 \begin{equation}
 	\inf \{x_k \;|\; k\geq n\} \geq \inf x_n = -1,
 \end{equation}
-so $\inf \{x_k \;|\; k\geq n\}=1$. Therefore, we conclude also that $\lim\inf x_n = -1$.
+so $\inf \{x_k \;|\; k\geq n\}=1$. Therefore, we conclude also that $\liminf x_n = -1$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	(i) Since $x_n \leq y_n \forall n\in\mathbb{N}$, then for each $n$, we have
+	\begin{equation}\label{sup-leq-sup}
+		\sup \{x_k \;|\; k\geq n\} \leq \sup \{y_k \:|\; k\geq n\}.
+	\end{equation}
+	Taking the limit on both sides of \eqref{sup-leq-sup} gives
+	\begin{equation}
+		\xRightarrow{n\to\infty} \limsup x_n \leq \limsup x_n,
+	\end{equation}
+	as desired.
+	
+	(ii) Since $x_n \leq y_n \forall n \in \mathbb{N}$, then for each $n$, we have
+	\begin{equation}\label{inf-leq-inf}
+		\inf\{x_k \;|\; k\geq n\} \leq \inf \{y_k \;|\; k\geq n\}.
+	\end{equation}
+	Taking the limit in \eqref{inf-leq-inf} yields
+	\begin{equation}
+		\xRightarrow{n \to\infty} \liminf x_n \leq \liminf y_n,
+	\end{equation}
+	and we are done.
+\end{proof}
+
 \end{document}
