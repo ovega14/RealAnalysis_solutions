@@ -144,6 +144,31 @@ so $\inf \{x_k \;|\; k\geq n\}=1$. Therefore, we conclude also that $\liminf x_n
 	Therefore, the sequence $\{x_n + y_n\}_n$ is bounded.
 \end{proof}
 
-
+\subsection*{(b)}
+\begin{proof}
+	Let $\{x_{n_k}\}_k$ be a subsequence of $\{x_n\}_n$. Since the sequence $\{x_n\}_n$ is bounded, then $\{x_{n_k}\}_k$ must also be bounded. Then by the Bolzano-Weierstrass theorem, $\exists$ a (sub) subsequence $\{x_{n_{k_i}}\}_i$ of the subsequence $\{x_{n_k}\}_k$ such that $\{x_{n_{k_i}}\}_i$ converges; i.e. that $\lim_{i\to\infty} x_{n_{k_i}}$ exists. Then
+	\begin{equation}
+		\liminf x_n \leq \lim_{i\to\infty} x_{n_{k_i}}.
+	\end{equation}
+	By the same logic as above, $\exists$ a (sub-sub) subsequence $\{y_{n_{k_{i_l}}}\}_l$ of $\{y_{n_{k_i}}\}_i$ such that $\lim_{l\to\infty} y_{n_{k_{i_l}}}$ exists. Then
+	\begin{equation}
+		\liminf y_n \leq \lim_{l \to \infty} y_{n_{k_{i_l}}}.
+	\end{equation}
+	Thus the corresponding subsequence $\{x_{n_{k_{i_l}}} + y_{n_{k_{i_l}}}\}_l$ of $\{x_{n_k} + y_{n_k}\}_k$ is convergent, and 
+	\begin{equation}
+		\lim_{l\to\infty}\left(x_{n_{k_{i_l}}} + y_{n_{k_{i_l}}}\right) = \lim_{k\to\infty} x_{n_k} + \lim_{k\to\infty} y_{n_k}.
+	\end{equation}
+	But we also have
+	\begin{align}
+		\lim_{l\to\infty}\left(x_{n_{k_{i_l}}} + y_{n_{k_{i_l}}}\right) &= \lim_{l\to\infty} x_{n_{k_{i_l}}} + \lim_{l\to\infty} y_{n_{k_{i_l}}}\\
+		&= \lim_{i \to \infty} x_{n_{k_i}} + \lim_{l\to\infty} y_{n_{k_{i_l}}} \\
+		& \geq \liminf x_n + \liminf y_n.
+	\end{align}
+	Additionally,
+	\begin{equation}
+		\liminf (x_n + y_n) \geq \lim_{l\to\infty}\left(x_{n_{k_{i_l}}} + y_{n_{k_{i_l}}}\right).
+	\end{equation}
+	Therefore, $\liminf x_n + \liminf y_n \leq \liminf (x_n + y_n)$. 
+\end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
