@@ -209,5 +209,16 @@ Therefore this example demonstrates a case where equality does not hold for the 
 	Thus, by the squeeze theorem, $|x_n|\rightarrow 0$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 6}
+\textbf{Claim:} There does not exist any sequence $\{x_n\}_n$ such that $\liminf x_n = -1$, $\lim_{n\to\infty}x_n=0$, and $\limsup x_n=1$.
+\begin{proof}
+	Suppose $\{x_n\}_n$ is a sequence such that $x_n \rightarrow 0$. Then $\{x_n\}_n$ converges.
+	
+	Now suppose $\liminf x_n = -1$ and $\limsup x_n = 1$. Thus,
+	\begin{equation}
+		\liminf x_n \neq \limsup x_n.
+	\end{equation}
+	Then by the theorem from lecture, $\{x_n\}_n$ does not converge. $(\Rightarrow \Leftarrow)$. This is a contradiction to the assumption that the sequence is convergent, so our initial assumption that such a sequence existed must be incorrect.
+\end{proof}
 
 \end{document}
