@@ -170,5 +170,16 @@ so $\inf \{x_k \;|\; k\geq n\}=1$. Therefore, we conclude also that $\liminf x_n
 	\end{equation}
 	Therefore, $\liminf x_n + \liminf y_n \leq \liminf (x_n + y_n)$. 
 \end{proof}
+
+\subsection*{(c)}
+Let $x_n = (-1)^n$ and $y_n = (-1)^{n+1}$ for $n \in \mathbb{N}$. Then
+\begin{equation}
+	x_n + y_n = (-1)^n + (-1)^{n+1} = (-1)^n (1-1) = 0.
+\end{equation}
+Thus, $\liminf (x_n + y_n) = 0$. But $\liminf x_n = \liminf y_n = -1$, so 
+\begin{equation}
+	\liminf x_n + \liminf y_n = -1 - 1 = -2 < 0.
+\end{equation}
+Therefore this example demonstrates a case where equality does not hold for the theorem in the previous sub-problem. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
