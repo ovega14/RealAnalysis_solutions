@@ -220,5 +220,22 @@ Therefore this example demonstrates a case where equality does not hold for the 
 	\end{equation}
 	Then by the theorem from lecture, $\{x_n\}_n$ does not converge. $(\Rightarrow \Leftarrow)$. This is a contradiction to the assumption that the sequence is convergent, so our initial assumption that such a sequence existed must be incorrect.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 7}
+\begin{proof}
+	Let $\epsilon_0 > 0$. Since $\{x_n\}_n$ is a Cauchy sequence, then $\exists N_0 \in \mathbb{N}$ such that $\forall n\geq N_0 + 1$,
+	\begin{equation}
+		|x_n - x_{n-1}| < \epsilon_0.
+	\end{equation}
+	Now let $\epsilon_1 = |x_n - x_{n-1}|$. Then since $\{x_n\}_n$ is Cauchy, $\exists N_1 \in \mathbb{N}$ such that
+	\begin{equation}
+		|x_{n+1}-x_n| < \epsilon_1.
+	\end{equation} 
+	Choose $M=N_1$. Then $\forall n \geq M$, 
+	\begin{equation}
+		|x_{n+1}-x_n| < |x_n - x_{n-1}|,
+	\end{equation}
+	as desired.
+\end{proof}
 
 \end{document}
