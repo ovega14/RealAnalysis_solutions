@@ -182,4 +182,32 @@ Thus, $\liminf (x_n + y_n) = 0$. But $\liminf x_n = \liminf y_n = -1$, so
 \end{equation}
 Therefore this example demonstrates a case where equality does not hold for the theorem in the previous sub-problem. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\begin{proof}
+	($\Rightarrow$) Suppose $\lim_{n\to\infty} x_n = 0$.
+	
+	Let $a_n = \sup \{|x_k| \;|\; k\geq n\}$. By \href{https://github.com/ovega14/RealAnalysis_solutions/blob/main/PS3/18.100A_ps3.pdf}{PS3.4}, since $a_n$ is a supremum, then $\forall n$ $\exists x_n$ such that $a_n - \frac{1}{n} < |x_n| \leq a_n$; i.e.
+	\begin{equation}
+		-\frac{1}{n} < |x_n|-a_n \leq 0.
+	\end{equation}
+	It becomes clear from the equation above that by the squeeze theorem, \\$\lim_{n\to\infty}(|x_n| - a_n)=0$, hence
+	\begin{equation}
+		0=\lim_{n\to\infty}|x_n|=\lim_{n\to\infty}a_n = \limsup |x_n|,
+	\end{equation}
+	as desired.
+	
+	($\Leftarrow$) Suppose $\limsup |x_n|=0$. Then $\lim_{n\to\infty} \sup\{|x_k| \;|\; k\geq n\}$ = 0.
+	
+	Let $a_n = \sup\{|x_k| \;|\; k\geq n\}$. Then by definition of the supremum, we have
+	\begin{equation}
+		0 \leq |x_n| \leq a_n.
+	\end{equation}
+	Taking the limit as $n\to\infty$ in the above inequality yields
+	\begin{equation}
+		0 \leq \lim_{n\to\infty}|x_n|\leq \limsup |x_n|=0.
+	\end{equation}
+	Thus, by the squeeze theorem, $|x_n|\rightarrow 0$.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
