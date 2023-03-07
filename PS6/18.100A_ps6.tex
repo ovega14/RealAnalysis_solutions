@@ -70,6 +70,7 @@ which converges.
 Therefore, $\sum_n ne^{-n^2}$ converges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 2}
+\subsection*{(a)}
 \begin{proof}
 	Suppose $\sum_n x_n$ converges. 
 	
@@ -99,5 +100,18 @@ Therefore, $\sum_n ne^{-n^2}$ converges.
 	\end{equation}
 	Therefore, $\sum_n \left(x_{2n} + x_{2n+1}\right)$ converges.
 \end{proof}
+
+\subsection*{(b)}
+Consider the following counterexample to the converse of the theorem proven in problem \textbf{(a)}:
+
+Let $x_n = (-1)^n$. Then 
+\begin{align}
+	\sum_{n=1}^{\infty}\left(x_{2n} +x_{2n+1}\right) &= \sum_{n=1}^{\infty}\left[(-1)^{2n} + (-1)^{2n+1}\right] \\
+	&= \sum_{n=1}^{\infty}\left(1^n - 1^n \right) \\
+	&= 0.
+\end{align}
+But $\sum_n (-1)^n$ does not converge. 
+
+Therefore, the converse to \textbf{(a)} does not always hold.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
