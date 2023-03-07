@@ -68,5 +68,36 @@ We note that $\forall n \in \mathbb{N}$, $e^{n^2} \geq n^3$. Then we have
 which converges. 
 
 Therefore, $\sum_n ne^{-n^2}$ converges.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 2}
+\begin{proof}
+	Suppose $\sum_n x_n$ converges. 
+	
+	Then the sequence of partial sums $\{s_m\}_m = \{x_1 + \cdots x_m\}_{m=1}^{\infty}$ also converges. 
+	
+	We construct two subsequences of $\{s_m\}_m$, defined via
+	\begin{equation}
+		\{s_{m_{2k}}\}_k = \{x_2, x_2 + x_4, x_2 + x_4 + x_6, \cdots\} = \{x_2 + \cdots x_{2k}\}_k,
+	\end{equation}
+	and
+	\begin{equation}
+		\{s_{m_{2k+1}}\}_k = \{x_1, x_1 + x_3, x_1 + x_3 + x_7, \cdots\} = \{x_1 + \cdots x_{2k+1}\}_k.
+	\end{equation}
+	Note that for each $m\in\mathbb{N}$, if $m$ is even then $m=2k$ for some $k\in\mathbb{N}$. Then
+	\begin{equation}
+		s_m = s_{m_{2k-1}} + s_{m_{2k}}.
+	\end{equation}
+	Likewise if $m$ is odd, then
+	\begin{equation}
+		s_m = s_{m_{2k}} + s_{m_{2k+1}}.
+	\end{equation}
+	In both cases, the partial sum $s_m$ must converge because the series $\sum_n x_n$ converges. Thus, the sum of the two partial sums must also converge, i.e. $\{s_{m_{2k}}\}_k$ and $\{s_{m_{2k+1}}\}_k$ both converge. 
+	
+	Then both series $\sum_n x_{2n}$ and $\sum_n x_{2n+1}$ must converge, and so does their sum:
+	\begin{equation}
+		\sum_n x_{2n} + \sum_n x_{2n+1} < \infty.
+	\end{equation}
+	Therefore, $\sum_n \left(x_{2n} + x_{2n+1}\right)$ converges.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

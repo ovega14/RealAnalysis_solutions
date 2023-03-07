@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  6 MAR 2023 20:07
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  6 MAR 2023 20:26
  restricted system commands enabled.
 **18.100A_ps6.tex
 (./18.100A_ps6.tex
@@ -566,38 +566,40 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (./18.1
-00A_ps6.aux)
+{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (./
+18.100A_ps6.aux)
 Package rerunfilecheck Info: File `18.100A_ps6.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11471 strings out of 478540
+ 11479 strings out of 478540
  125056,552014 words of node,token memory allocated
- 614 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 29 attribute, 58 gl
-ue_spec, 16 attribute_list, 1 write nodes
-   avail lists: 1:1,2:688,3:115,4:12,5:428,6:22,7:1543,8:65,9:883,10:3,11:45
- 30925 multiletter control sequences out of 65536+200000
- 64 fonts using 5539471 bytes
- 71i,11n,74p,525b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
-<//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf>
-<//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><//
-?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><//
-?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 18.100A_ps6.pdf (2 pages, 102952 bytes).
+ 674 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 49 attribute, 58 gl
+ue_spec, 26 attribute_list, 1 write nodes
+   avail lists: 1:1,2:707,3:142,4:12,5:428,6:35,7:2572,8:65,9:883,10:3,11:64
+ 30926 multiletter control sequences out of 65536+200000
+ 65 fonts using 5671159 bytes
+ 71i,11n,74p,525b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
+<//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><
+//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><
+//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><//?
+/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><//?
+/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on 18.100A_ps6.pdf (3 pages, 120949 bytes).
 
-PDF statistics: 100 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 131072)
+PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
