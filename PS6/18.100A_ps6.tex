@@ -60,4 +60,13 @@ We can express the series $\sum_n \frac{1}{n(n+1)}$ as a telescoping sum:
 \end{align}
 Therefore, $\sum_n \frac{1}{n(n+1)}$ converges to $1$.
 
+\subsection*{(e)}
+We note that $\forall n \in \mathbb{N}$, $e^{n^2} \geq n^3$. Then we have
+\begin{equation}
+	\sum_{n=1}^{\infty}\frac{n}{e^{n^2}} \leq \sum_{n=1}^{\infty} \frac{n}{n^3} = \sum_{n=1}^{\infty}\frac{1}{n^2}, 
+\end{equation}
+which converges. 
+
+Therefore, $\sum_n ne^{-n^2}$ converges.
+
 \end{document}
