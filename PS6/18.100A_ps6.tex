@@ -114,4 +114,21 @@ But $\sum_n (-1)^n$ does not converge.
 
 Therefore, the converse to \textbf{(a)} does not always hold.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	Suppose $\sum_n x_n$ converges absolutely.
+	
+	Since the series $\sum_n |x_n|$ converges, then $\sum_n x_n$ converges by comparison, because $x_n \leq |x_n|$.
+	
+	Let $N \in \mathbb{N}$. Then the triangle inequality gives
+	\begin{equation}
+		|x_1 + x_2 + \cdots + x_N| \leq |x_1| + |x_2| + \cdots + |x_N| = \sum_{n=1}^{N}|x_n|.
+	\end{equation}
+	Because $\sum_n |x_n|$ converges, we can now take $N \to \infty$, which gives
+	\begin{equation}
+		\left|\sum_{n=1}^{\infty} x_n \right| \leq \sum_{n=1}^{\infty} |x_n|,
+	\end{equation}
+	as desired.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
