@@ -29,6 +29,32 @@
 \begin{document}
 \maketitle
 
+\section*{Problem 1}
+\subsection*{(a)}
+\begin{proof}
+Let $x \in f^{-1}(C \cap D)$. Then 
+\begin{align}
+	&\implies f(x) \in C \cap D \\
+	&\implies f(x) \in C \textrm{ and } f(x) \in D \\
+	&\implies x \in f^{-1}(C) \textrm{ and } x \in f^{-1}(D) \\
+	&\implies x \in f^{-1}(C) \cap f^{-1}(D).
+\end{align}
+Thus, 
+\begin{equation}\label{1a-1}
+	f^{-1}(C \cap D) \subseteq f^{-1}(C) \cap f^{-1}(D).
+\end{equation}
+Now let $x \in f^{-1}(C) \cap f^{-1}(D)$. Then
+\begin{align}
+	&\implies f(x) \in C \textrm{ and } f(x) \in D \\
+	&\implies f(x) \in C \cap D \\
+	&\implies x \in f^{-1}(C \cap D).
+\end{align}
+Thus,
+\begin{equation}\label{1a-2}
+	 f^{-1}(C) \cap f^{-1}(D) \subseteq f^{-1}(C \cap D).
+\end{equation}
+Therefore by equations \eqref{1a-1} and \eqref{1a-2}, $f^{-1}(C \cap D) = f^{-1}(C) \cap f^{-1}(D)$.
+\end{proof}
 
 \end{document}
 	
