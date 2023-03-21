@@ -90,5 +90,19 @@ A set $U \subset \R$ is \textit{not open} if for every $\epsilon > 0$, $\exists 
 \begin{proof}
 	(By contradiction). To show that $F$ is closed, we must show that $F^c$ is open. Suppose, toward a contradiction, that $F^c$ is not open. Then by part \textbf{(b)}, $\exists x \in F^c$ and a sequence $\{x_n\}_n$ of elements of $F$ such that $\lim_{n\to\infty} x_n = x$. But by assumption, every convergent sequence of elements of $F$ has a limit in $F$, i.e. we assumed originally that $x \in F$ $(\Rightarrow\Leftarrow)$. Thus, $F^c$ must be open, so $F$ is closed.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\subsection*{(a)}
+\begin{proof}
+	Let $\epsilon > 0$. Choose $N = \frac{1}{\sqrt{\epsilon}}$. Then $\forall n \geq N$, we have
+	\begin{align}
+		\left|\frac{10n^2}{n^2 + 16n + 1} - 10\right| &= \left|\frac{-160n - 10}{n^2 + 16n + 1}\right| \\
+		&= \left|\frac{160n + 10}{n^2 + 16n + 1}\right| \\
+		&< \frac{1}{n^2 + 16n + 1} \\
+		&< \frac{1}{n^2} \\
+		&< \epsilon.
+	\end{align}
+	Therefore, $\lim_{n \to \infty} \left|\frac{10n^2}{n^2 + 16n + 1}\right| = 10$.
+\end{proof}
 \end{document}
 	
