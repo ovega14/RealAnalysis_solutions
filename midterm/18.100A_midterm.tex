@@ -201,7 +201,33 @@ Therefore, $\{x_n\}_n$ is unbounded, but $\{x_{n_k}\}_k$ converges to $0$.
 \end{proof}
 
 \subsection*{(b)}
-TODO TODO TODO 
+(i)
+Let $a_n(x) = \frac{(-1)^n}{2020n}(x-10)^n$ for each $n \in \N$. Then $|a_n(x)| = \frac{|x-10|^n}{2020n}$. Using the ratio test, in order for the series to converge absolutely we have
+\begin{align}
+	L &= \lim_{n \to \infty}\left|\frac{a_{n+1}}{a_n}\right| \\
+	&= \lim_{n \to \infty} \left|\frac{(x-10)^{n+1}}{2020(n+1)}\right| \cdot \left|\frac{2020n}{(x-10)^n}\right| \\
+	&= \lim_{n \to \infty} \left|\frac{n(x-10)}{n+1}\right| \\
+	&= |x-10| < 1.
+\end{align}
+Thus, $\sum_n a_n(x)$ converges absolutely for all $9 < x < 11$.
 
+Since this series is alternating, then for it to converge we must have that $\frac{(x-10)^n}{n}$ is monotonically decreasing and converges to zero. In order for this to be true, $x$ can be no smaller than $9$ and no larger than $11$. 
+
+Therefore, $\sum_n \frac{(-1)^n}{2020n}(x-10)^n$ converges for all $9 \leq x \leq 11$.
+
+(ii) Let $a_n(x) = n! x^{n!}$. Then
+\begin{align}
+	\left|\frac{a_{n+1}}{a_n}\right| &= \left|\frac{(n+1)! x^{(n+1)!}}{n!x^{n!}}\right| \\
+	&= (n+1)\left|\frac{x^{(n+1)!}}{x^{n!}}\right| \\
+	&= (n+1) \left|\left(\frac{x^{n+1}}{x}\right)^{n!}\right| \\
+	&= (n+1) \left|x^{n\cdot n!}\right|.
+\end{align}
+Then by the ratio test, in order for $\sum_n a_n$ to converge, we must have
+\begin{equation}
+	\lim_{n \to \infty} (n+1) \left|x^{n\cdot n!}\right| < 1.
+\end{equation}
+This holds when $|x| < 1$; otherwise the terms diverge. 
+
+Therefore, $\sum_n n! x^{n!}$ converges for all $-1 < x < 1$, and the same holds for absolute convergence.
 \end{document}
 	
