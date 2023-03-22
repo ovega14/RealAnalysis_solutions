@@ -153,5 +153,24 @@ Therefore, $\{x_n\}_n$ is unbounded, but $\{x_{n_k}\}_k$ converges to $0$.
 	Therefore, $\limsup(x_n + y_n) \leq \limsup x_n + \limsup y_n$.
 \end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Let $x=0.1111...$. Then we can write
+	\begin{align}
+		x &= \frac{1}{10} + \frac{1}{100} + \frac{1}{1000} + \cdots \\
+		&= -1 + \sum_{n=0}^{\infty}\left(\frac{1}{10}\right)^n \\
+		&= -1 + \frac{1}{1-\frac{1}{10}} \\
+		&= -1 + \frac{10}{9} \\
+		&= \frac{1}{9}.
+	\end{align}
+	Let $\epsilon = \frac{1}{10^n}$ for $n \in \N$ and let $x_n = \frac{1}{9} + \frac{1}{10^{n+1}}$. Then $x_n \in \left(\frac{1}{9}-\epsilon, \frac{1}{9} + \epsilon\right)$. So
+	\begin{equation}
+		\frac{1}{9} - \frac{1}{10^{n+1}} < x_n < \frac{1}{9} + \frac{1}{10^{n+1}}.
+	\end{equation}
+	But $x_n = \frac{1}{9} + \frac{1}{10^{n+1}} = 0.111...11211... \in E$. Thus, for every $\epsilon > 0$, \\$\exists x_n \in \left(\frac{1}{9}-\epsilon, \frac{1}{9}+\epsilon\right)$ such that $\left(\frac{1}{9}-\epsilon, \frac{1}{9}+\epsilon\right)\cap E \neq \varnothing$.
+	
+	Therefore, $0.1111...$ is a cluster point of $E$.
+\end{proof}
+
 \end{document}
 	
