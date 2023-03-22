@@ -114,8 +114,8 @@ Therefore $\{x_n\}_n$ converges to $0$, but is not monotonic.
 \begin{equation}
 	x_n = \begin{cases}
 		0, \quad n \textrm{ even} \\
-		n, \quad n \textrm{ odd}
-	\end{cases}.
+		n, \quad n \textrm{ odd}.
+	\end{cases}
 \end{equation}
 Then $\{x_n\}_n$ is clearly unbounded.
 
@@ -125,7 +125,33 @@ Therefore, $\{x_n\}_n$ is unbounded, but $\{x_{n_k}\}_k$ converges to $0$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 4}
 \subsection*{(a)}
-TODO TODO
+(i) 
+\begin{proof}
+	Suppose $\{x_n\}_n$ and $\{y_n\}_n$ are bounded. Then $\exists B_0 > 0$ and $B_1 > 0$ such that $\forall n \in \N$, $|x_n| \leq B_0$ and $|y_n| \leq B_1$.
+	
+	Let $B = B_0 + B_1$. Then by the triangle inequality, we have
+	\begin{equation}
+		|x_n + y_n| \leq |x_n| + |y_n| \leq B_0 + B_1 = B.
+	\end{equation}
+	Thus, $\forall n \in \N$, $|x_n + y_n| \leq B$.
+	
+	Therefore, $\{x_n + y_n\}_n$ is bounded.
+\end{proof}
+
+(ii) 
+\begin{proof}
+	Let $a_n = \sup\{x_k \;|\; k\geq n\}$, $b_n = \sup\{y_k \;|\; k\geq n\}$, and \\$c_n = \sup\{x_k + y_k \;|\; k\geq n\}$.
+	
+	Then $\forall n \in \N$, $a_n \geq x_n$ and $b_n \geq y_n$, so
+	\begin{equation}
+		\implies x_n + y_n \leq a_n + b_n.
+	\end{equation}
+	But $a_n + b_n$ is also an upper bound for $\{x_n + y_n\}_n$, so $c_n \leq a_n + b_n$. Then
+	\begin{equation}
+		\lim_{n \to \infty} c_n \leq \lim_{n \to \infty} a_n + \lim_{n \to \infty} b_n.
+	\end{equation}
+	Therefore, $\limsup(x_n + y_n) \leq \limsup x_n + \limsup y_n$.
+\end{proof}
 
 \end{document}
 	
