@@ -171,6 +171,37 @@ Therefore, $\{x_n\}_n$ is unbounded, but $\{x_{n_k}\}_k$ converges to $0$.
 	
 	Therefore, $0.1111...$ is a cluster point of $E$.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\subsection*{(a)}
+\begin{proof}
+	($\Rightarrow$) Suppose $\sum_n a_n$ converges. 
+	
+	Since $\forall n \in \N$, $a_n > 0$, $b_n > 0$ and $\lim_{n \to \infty} \frac{a_n}{b_n} = L >0$, then $\exists N \in \N$ such that $\forall n \geq N$,
+	\begin{align}
+		&\frac{a_n}{b_n} > L - 1 \\
+		&\implies a_n > (L-1)b_n \\
+		&\implies (L-1)\sum_n b_n < \sum_n a_n.
+	\end{align}
+	But $\sum_n a_n$ converges, so $(L-1)\sum_n b_n$ converges by comparison.
+	
+	Thus, $\sum_n b_n$ converges.
+	
+	($\Leftarrow$) Suppose $\sum_n b_n$ converges.
+	
+	Then similarly, $\exists N \in \N$ such that $\forall n \geq N$, 
+	\begin{align}
+		&\frac{a_n}{b_n} < L + 1 \\
+		&\implies a_n < (L+1)b_n \\
+		&\implies \frac{1}{L+1}a_n < b_n.
+	\end{align}
+	But $\sum_n b_n$ converges, so $\frac{1}{L+1}\sum_n a_n$ converges by comparison.
+	
+	Therefore, $\sum_n a_n$ converges.
+\end{proof}
+
+\subsection*{(b)}
+TODO TODO TODO 
 
 \end{document}
 	
