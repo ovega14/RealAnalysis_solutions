@@ -30,6 +30,18 @@
 \maketitle
 	
 \section*{Problem 1}
-	
+\begin{proof}
+	Since $\sum_n a_n$ and $\sum_n b_n$ converge absolutely, suppose that $\sum_n |a_n| < M$ and $\sum_n |b_n| < N$. Then
+	\begin{align}
+		\sum_{n=0}^{m}|c_n| &= \sum_{n=0}^m \left|\sum_{k=0}^n a_k b_{n-k}\right| \\
+		& \leq \sum_{n=0}^m \sum_{k=0}^n |a_k b_{n-k}| \\
+		&= |a_0 b_0| + (|a_0 b_1| + |a_1 b_0|) + \cdots + \nonumber \\&(|a_0 b_m | + |a_1 b_{m-1}| + \cdots + |a_m b_0|) \\
+		&= \sum_{n=0}^m |a_n| \sum_{k=0}^{m-n}|b_k| \\
+		&< MN.
+	\end{align}
+	Thus $\sum_n |c_n|$ is bounded above and monotone, so it converges.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 	
 \end{document}
