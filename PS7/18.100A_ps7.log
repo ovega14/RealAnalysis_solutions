@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  8 APR 2023 12:31
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  8 APR 2023 12:42
  restricted system commands enabled.
 **18.100A_ps7.tex
 (./18.100A_ps7.tex
@@ -579,14 +579,14 @@ Package rerunfilecheck Info: File `18.100A_ps7.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11567 strings out of 478540
+ 11572 strings out of 478540
  125056,552014 words of node,token memory allocated
- 578 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 17 attribute, 58 gl
-ue_spec, 10 attribute_list, 1 write nodes
-   avail lists: 1:1,2:486,3:82,4:16,5:286,6:12,7:1210,8:31,9:498,10:3,11:20
- 31024 multiletter control sequences out of 65536+200000
- 64 fonts using 5539471 bytes
+ 590 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 21 attribute, 58 gl
+ue_spec, 12 attribute_list, 1 write nodes
+   avail lists: 1:1,2:639,3:134,4:16,5:338,6:26,7:1704,8:40,9:672,10:3,11:26
+ 31025 multiletter control sequences out of 65536+200000
+ 65 fonts using 5671159 bytes
  71i,9n,74p,534b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf>
 <//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><
@@ -595,14 +595,15 @@ ue_spec, 10 attribute_list, 1 write nodes
 /c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb>
-Output written on 18.100A_ps7.pdf (1 page, 78675 bytes).
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on 18.100A_ps7.pdf (1 page, 101258 bytes).
 
-PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 131072)
+PDF statistics: 92 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
