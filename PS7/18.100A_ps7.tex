@@ -72,4 +72,15 @@ Then, we require
 \end{equation}
 which is always satisfied. Thus, $\sum_n \frac{1}{(2n)!}(x-10)^n$ converges $\forall x \in \R$.
 
+\subsection*{(d)}
+Letting $a_n = n! x^n$, we have 
+\begin{equation}
+	\left|\frac{a_{n+1}}{a_n}\right| = \left|\frac{(n+1)!x^{n+1}}{n! x^n}\right| = (n+1)|x|.
+\end{equation}
+Thus we must have
+\begin{equation}
+	\lim_{n \to \infty} (n+1)|x| < 1,
+\end{equation}
+which is only satisfied for $x=0$. Thus, $\sum_n n! x^n$ converges only for $x=0$.
+
 \end{document}
