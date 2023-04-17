@@ -61,4 +61,15 @@ Thus, we require
 \end{equation}
 Therefore, $\sum_n n x^n$ converges for all $|x| < 1$. 
 
+\subsection*{(c)}
+Proceeding with the ratio test, we have
+\begin{equation}
+	\left|\frac{a_{n+1}}{a_n}\right| = \left|\frac{(x-10)^{n+1} (2n)!}{(2n+2)!(x-10)^n}\right| = \left|\frac{x-10}{(2n+2)(2n+1)}\right|
+\end{equation}
+Then, we require
+\begin{equation}
+	\lim_{n \to \infty} \left|\frac{x-10}{4n^2 + 6n + 2}\right| = 0 < 1,
+\end{equation}
+which is always satisfied. Thus, $\sum_n \frac{1}{(2n)!}(x-10)^n$ converges $\forall x \in \R$.
+
 \end{document}
