@@ -82,5 +82,39 @@ Thus we must have
 	\lim_{n \to \infty} (n+1)|x| < 1,
 \end{equation}
 which is only satisfied for $x=0$. Thus, $\sum_n n! x^n$ converges only for $x=0$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	(i) Let $z_n = \max\{|x_n|, |y_n|\}$ for each $n \in \N$. Then
+	\begin{equation} \label{3.1}
+		|x_n y_n| = |x_n||y_n| \leq |x_n||z_n| \leq |z_n|^2.
+	\end{equation}
+	But we assumed that both $\sum_n |x_n|^2$ and $\sum_n |y_n|^2$ converge, so $\sum_n |z_n|^2$ converges. Thus, by \eqref{3.1} we see that $\sum_n |x_n y_n|$ converges by comparison.
+	
+	Therefore, $\sum_n x_n y_n$ converges absolutely.
+	
+	(ii) By the triangle inequality for infinite series, we have
+	\begin{equation}
+		\left|\sum_{n=1}^{\infty} x_n y_n \right| \leq \sum_{n=1}^{\infty}|x_n y_n|.
+	\end{equation}
+	Let $N \in \N$ and let $A = \sqrt{x_1^2 + \cdots + x_N^2}$ and $B = \sqrt{y_1^2 + \cdots + y_N^2}$. By the arithmetic mean - geometric mean inequality, for each $n \in \N$ we have
+	\begin{equation}
+		\sqrt{\frac{x_n^2 y_n^2}{A^2 B^2}} \leq \frac{1}{2}\left(\frac{x_n^2}{A^2} + \frac{y_n^2}{B^2}\right).
+	\end{equation}
+	Summing over all $k = 1, ..., N$,
+	\begin{equation} \label{3.2}
+		\sum_{n=1}^N \frac{x_n y_n}{AB} \leq \sum_{n=1}^N \frac{1}{2}\left(\frac{x_n^2}{A^2} + \frac{y_n^2}{B^2}\right) = 1
+	\end{equation}
+	Multiplying both sides of \eqref{3.2} by $AB$, we get
+	\begin{equation}
+		\sum_{n=1}^N x_n y_n \leq AB = \left(\sum_{n=1}^N x_n^2\right)^\frac{1}{2}\left(\sum_{n=1}^N y_n^2\right)^\frac{1}{2}.
+	\end{equation}
+	Letting $N \to \infty$, since limits respect inequalities we arrive at
+	\begin{equation}
+		\sum_{n=1}^{\infty}|x_n y_n| \leq \left(\sum_{n=1}^{\infty}x_n^2\right)^\frac{1}{2}\left(\sum_{n=1}^{\infty}y_n^2\right)^\frac{1}{2},
+	\end{equation}
+	as desired.
+\end{proof}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
