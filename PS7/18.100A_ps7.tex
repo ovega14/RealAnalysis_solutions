@@ -135,4 +135,20 @@ which is only satisfied for $x=0$. Thus, $\sum_n n! x^n$ converges only for $x=0
 	
 	Also, since $f$ is bounded, then $\exists$ $B \geq 0$ such that $\forall x \in S$, $|f(x)| \leq B$. Then the sequence $\{f(y_k)\}_k$ is bounded. By the Bolzano-Weierstrass theorem, $\exists$ a convergent subsequence $\{f(y_{k_n})\}_n$. Simply taking $x_n = y_{k_n}$ for each $n \in \N$, we see that $\{f(x_n)\}_n$ converges, as desired.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 6}
+\subsection*{(a)}
+\begin{proof}
+	Since $\lim_{x \to c}f(x) = L$, then for every $\epsilon > 0$ $\exists$ $\delta > 0$ such that if \\$|x-c| < \delta$, then $|f(x) - L| < \epsilon$.
+	
+	Let $\epsilon = |L|$, and suppose $0 < |x-c| < \delta$ with $\delta$ chosen appropriately. Then
+	\begin{align}
+		|f(x)| & = |f(x) - L + L| \\
+		& \leq |f(x) - L| + |L| \\
+		& < \epsilon + |L| \\
+		&= 2|L|.
+	\end{align}
+	Choosing $B = 2|L|$, we see that $f$ is bounded, and we are done.
+\end{proof}
+
 \end{document}
