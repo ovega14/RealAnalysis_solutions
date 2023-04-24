@@ -129,4 +129,10 @@ which is only satisfied for $x=0$. Thus, $\sum_n n! x^n$ converges only for $x=0
 	Therefore, every real number is a cluster point of the irrationals.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\begin{proof}
+	Since $c$ is a cluster point of $S$, then $\exists$ a sequence $\{y_k\}_k$ of elements in $S \backslash \{c\}$ such that $y_k \to c$.
+	
+	Also, since $f$ is bounded, then $\exists$ $B \geq 0$ such that $\forall x \in S$, $|f(x)| \leq B$. Then the sequence $\{f(y_k)\}_k$ is bounded. By the Bolzano-Weierstrass theorem, $\exists$ a convergent subsequence $\{f(y_{k_n})\}_n$. Simply taking $x_n = y_{k_n}$ for each $n \in \N$, we see that $\{f(x_n)\}_n$ converges, as desired.
+\end{proof}
 \end{document}
