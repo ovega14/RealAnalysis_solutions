@@ -151,4 +151,17 @@ which is only satisfied for $x=0$. Thus, $\sum_n n! x^n$ converges only for $x=0
 	Choosing $B = 2|L|$, we see that $f$ is bounded, and we are done.
 \end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Since $\lim_{x \to c} f(x) = L > 0$, then $\forall \epsilon > 0$, $\exists \delta_0 > 0$ such that if $|x-c| < \delta_0$, then $|f(x) - L| < \epsilon$. Equivalently, for $|x-c| < \delta_0$,
+	\begin{equation}
+		L -\epsilon < f(x) < L + \epsilon.
+	\end{equation}
+	Let $0 < \epsilon < L$. Then $\exists \delta_1 > 0$ such that if $|x - c| < \delta_1$, then
+	\begin{equation}
+		0 < L - \epsilon < f(x) < L + \epsilon.
+	\end{equation}
+	Choosing $\delta = \delta_1$, we see that $f(x)$ is positive for $|x - c| < \delta$, and we are done.
+\end{proof}
+
 \end{document}
