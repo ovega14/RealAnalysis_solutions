@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\usepackage[]{amsmath}
+\usepackage[parfill]{parskip} %avoid indent when skipping lines
+\usepackage[toc,page]{appendix}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={18.100A-ps8},
+	pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
+\newcommand{\R}{\mathbb{R}} %the real numbers
+\newcommand{\N}{\mathbb{N}} %the natural numbers
+\newcommand{\M}{\mathcal{M}} %set of all Lebesgue-measurable sets
+\newcommand{\Q}{\mathbb{Q}} % the rational numbers
+
+\title{18.100A Assignment 8}
+\author{Octavio Vega}
+\date\today
+
+\begin{document}
+\maketitle
+
+\section*{Problem 1}
+\begin{proof}
+	Suppose $\lim\limits_{x \to c} f(x) = \lim\limits_{x \to c} h(x)$. Then since $c$ is a cluster point of $S$ and $\forall x \in S$, $f(x) \leq g(x) \leq h(x)$, we have
+	\begin{equation}
+		\lim\limits_{x \to c} f(x) \leq \lim\limits_{x \to c} g(x) \leq \lim\limits_{x \to c} h(x) = \lim\limits_{x \to c} f(x).
+	\end{equation}
+	Thus by the squeeze theorem, 
+	\begin{equation}
+		\lim\limits_{x \to c} g(x) = \lim\limits_{x \to c} f(x) = \lim\limits_{x \to c} h(x),
+	\end{equation}
+	as desired.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 2}
+\begin{proof}
+	(1) Let $\epsilon > 0$. Choose $\delta = \frac{\epsilon}{2}$. Then if $|x| < \delta$, we have
+	\begin{align}
+		|f(x) - f(0)| &= |f(x)| \\
+		&\leq 2 |x| \\
+		& < 2 \delta \\
+		&= \epsilon.
+	\end{align}
+	Therefore, $f$ is continuous at $x = 0$.
+	
+	(2) Let $\delta > 0$, $\epsilon_0 > 0$. Suppose $|x-1| < \delta$. Let
+	\begin{align}
+		x_0 = 
+		\begin{cases}
+			\epsilon_0 \sqrt{2}, \; &\epsilon_0 \in \Q \\
+			\epsilon_0, \; &\epsilon_0 \notin \Q.
+		\end{cases}
+	\end{align}
+	Then $x_0 \notin \Q$ $\forall \epsilon_0 > 0$. 
+	
+	Choose $x = \frac{x_0}{2}$. Then
+	\begin{align}
+		|f(x) - f(1)| &= |f(x)| \\
+		&= 2 |x| \\
+		&= x_0 \\
+		&\geq \epsilon_0.
+	\end{align}
+	Therefore, $f$ is discontinuous at $x = 1$.
+\end{proof}
+	
+\end{document}
