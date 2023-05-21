@@ -92,7 +92,7 @@
 	
 	It remains only to show that $h$ is continuous at $x = 0$.
 	
-	Let $\epsilon_0 > 0$. By continuity of $f$ $\exists \delta_0$ such that if $|x| < \delta_0$, then $|f(x) - f(0)| < \epsilon_0$. Similarly, let $\epsilon_1 >0$. Then by continuity of $g$, $\exists \delta_1 > 0$ such that if $|x| < \delta_1$, then $|g(x) - g(0)| < \epsilon_1$.
+	Let $\epsilon_0 > 0$. By continuity of $f$, $\exists \delta_0$ such that if $|x| < \delta_0$, then $|f(x) - f(0)| < \epsilon_0$. Similarly, let $\epsilon_1 >0$. Then by continuity of $g$, $\exists \delta_1 > 0$ such that if $|x| < \delta_1$, then $|g(x) - g(0)| < \epsilon_1$.
 	
 	Let $x \in [-1, 1]$ and let $\epsilon = \min\{\epsilon_0, \epsilon_1\}$. Choose $\delta = \min\{\delta_0, \delta_1\}$. If $|x| < \delta$, then $|x| < \delta_0$ and $|x| < \delta_1$. If $x \leq 0$, then we have
 	\begin{equation}
@@ -103,6 +103,20 @@
 		|h(x) - h(0)| = |g(x) - g(0)| < \epsilon_1 \leq \epsilon.
 	\end{equation}
 	Thus, $h(x)$ is continuous at $x=0$, so we conclude $h$ is continuous.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\begin{proof}
+	($\Rightarrow$) Suppose $f: \R \to \R$ is continuous, and let $U \subset \R$ be open.
+	
+	Let $f(c) \in U$. Then $c = f^{-1}(f(c)) \in f^{-1}(U)$. Since $f$ is continuous at $c$, then $\forall \epsilon > 0$ $\exists \delta >0$ such that if $|x - c| < \delta$, then $|f(x) - f(c)| < \epsilon$. Since this must hold for every $c \in f^{-1}(U)$, and the subset $(c - \delta, c + \delta)$ is open, then $f^{-1}(U)$ is also open.
+	
+	($\Leftarrow$) Suppose for every $U \subset \R$ open, $f^{-1}(U)$ is also open. 
+	
+	Let $c \in f^{-1}(U)$. Then $f(c) \in U$. Since $U$ is open, then $\exists \epsilon > 0$ such that $(f(c) - \epsilon, f(c) + \epsilon)$.
+	Let $A = (f(c) - \epsilon, f(c) + \epsilon)$. Then since $A$ is open, $f^{-1}(A)$ is open by assumption. Then $\exists \delta > 0$ such that $(c - \delta, c + \delta) \subset f^{-1}(A)$, i.e. if $x \in (c - \delta, c + \delta)$, then $f(x) \in A$.
+	
+	Thus for every $\epsilon > 0$, $\exists \delta > 0$ such that if $|x - c| < \delta$, then $|f(x) - f(c)| < \epsilon$. Therefore $f$ is continuous at $c$. This holds for every $c$ in every open subset of $\R$. Hence $f$ is continuous.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
