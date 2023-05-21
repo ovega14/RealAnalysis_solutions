@@ -86,6 +86,23 @@
 	Simply choose $\alpha = \delta$, and we are done.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+\section*{Problem 4}
+\begin{proof}
+	Since $h = f$ on $[-1, 0]$ and $f(x)$ is continuous, then $h$ is continuous on $[-1, 0]$. Similarly, since $h = g$ on $(0, 1]$ and $g$ is continuous, then $h$ is continuous on $(0, 1]$. 
+	
+	It remains only to show that $h$ is continuous at $x = 0$.
+	
+	Let $\epsilon_0 > 0$. By continuity of $f$ $\exists \delta_0$ such that if $|x| < \delta_0$, then $|f(x) - f(0)| < \epsilon_0$. Similarly, let $\epsilon_1 >0$. Then by continuity of $g$, $\exists \delta_1 > 0$ such that if $|x| < \delta_1$, then $|g(x) - g(0)| < \epsilon_1$.
+	
+	Let $x \in [-1, 1]$ and let $\epsilon = \min\{\epsilon_0, \epsilon_1\}$. Choose $\delta = \min\{\delta_0, \delta_1\}$. If $|x| < \delta$, then $|x| < \delta_0$ and $|x| < \delta_1$. If $x \leq 0$, then we have
+	\begin{equation}
+		|h(x) - h(0)| = |f(x) - f(0)| < \epsilon_0 \leq \epsilon.
+	\end{equation}
+	Similarly if $x > 0$, then we have
+	\begin{equation}
+		|h(x) - h(0)| = |g(x) - g(0)| < \epsilon_1 \leq \epsilon.
+	\end{equation}
+	Thus, $h(x)$ is continuous at $x=0$, so we conclude $h$ is continuous.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
