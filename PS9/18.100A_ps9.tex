@@ -44,7 +44,7 @@
 \begin{proof}
 	Let $x, y \in (c, \infty)$. Choose $L = \frac{1}{c^2}$. Then
 	\begin{align}
-		|f(y) - f(x)| &= \big|\frac{1}{y} - \frac{1}{x}\big| \\
+		|f(y) - f(x)| &= \Big|\frac{1}{y} - \frac{1}{x}\Big| \\
 		&= \frac{|x - y|}{xy} \\
 		&< \frac{|x - y|}{c^2} \\
 		&= L |x - y|.
@@ -52,4 +52,25 @@
 	Therefore $f(x) = \frac{1}{x}$ is Lipschitz continuous.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	Let $\delta > 0$ and choose $\epsilon_0 = |\sin(\delta)|$. Choose $x = \frac{1}{2\pi k + \delta}$ and $c = \frac{1}{2 \pi k}$ for some $k \in \N$. Then
+	\begin{align}
+		|x - c| &= \Big|\frac{1}{2 \pi k} - \frac{1}{2 \pi k}\Big| \\
+		&= \Big|\frac{2 \pi k - (2 \pi k + \delta)}{2 \pi k (2 \pi k + \delta)}\Big| \\
+		&= \frac{\delta}{4 \pi^2 k^2 + 2 \pi k \delta} \\
+		&< \delta.
+	\end{align}
+	We also have
+	\begin{align}
+		|f(x) - f(c)| &= |\sin(2 \pi k + \delta) - \sin(2 \pi k)| \\
+		&= |\sin(2 \pi k)\cos(\delta) + \cos(2 \pi k)\sin(\delta) - \sin(2 \pi k)| \\
+		&= |\sin(\delta)| \\
+		&= \epsilon_0.
+	\end{align}
+	Hence, $f(x) = \sin\left(\frac{1}{x}\right)$ is not uniformly continuous.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \end{document}
