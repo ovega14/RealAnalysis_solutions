@@ -71,6 +71,17 @@
 	Hence, $f(x) = \sin\left(\frac{1}{x}\right)$ is not uniformly continuous.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+\section*{Problem 4}
+\begin{proof}
+	Suppose $f: S \to \R$ is Lipschitz continuous on $S$. Then $\exists L \geq 0$ such that $\forall x, y \in S$, $|f(x) - f(y)| \leq L |x - y|$.
+	
+	Let $\epsilon > 0$. Choose $\delta = \frac{\epsilon}{L}$. If $|x - y| < \delta$, then
+	\begin{align}
+		|f(x) - f(y)| &\leq L|x - y| \\
+		& < L \delta \\
+		&= \epsilon.
+	\end{align}
+	Thus $f$ is uniformly continuous on $S$. 
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
