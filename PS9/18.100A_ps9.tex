@@ -116,7 +116,31 @@
 	Therefore $f(x) = x^{\frac{1}{3}}$ is not Lipschitz continuous on $[0, 1]$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 6}
+(a) \begin{proof}
+	Choose $M = \frac{1}{\sqrt{\epsilon}}$. Then $\forall x \geq M$, 
+	\begin{align}
+		|f(x) - L| &= \Big|\frac{x^2}{x^2 + 1} - 1\Big| \\
+		&= \Big|\frac{x^2 - x^2 - 1}{x^2 + 1}\Big| \\
+		&= \frac{1}{x^2 + 1} \\
+		&< \frac{1}{x^2} \\
+		&= \epsilon.
+	\end{align}
+	Therefore $\lim\limits_{x \to \infty} \frac{x^2}{x^2 + 1} = 1$.
+\end{proof}
 
-
+(b) \begin{proof}
+	(By contradiction.)
+	
+	Suppose $L = \lim\limits_{x \to \infty} \sin(x)$ exists. Let $M \in \R$ and choose $x = \pi$. Let $\epsilon_0 = L$. Then
+	\begin{align}
+		|\sin(x) - L| &= |\sin(\pi) - L| \\
+		&= |-1 - L| \\
+		&= 1 + L \\
+		&> L \\
+		&= \epsilon_0. \quad (\Rightarrow \Leftarrow)
+	\end{align}
+	Therefore $\lim\limits_{x \to \infty} \sin(x)$ does not exist.
+\end{proof}
 
 \end{document}

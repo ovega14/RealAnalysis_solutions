@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  22 MAY 2023 19:04
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  22 MAY 2023 19:49
  restricted system commands enabled.
 **18.100A_ps9.tex
 (./18.100A_ps9.tex
@@ -572,19 +572,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (./
-18.100A_ps9.aux)
+{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+
+(./18.100A_ps9.aux)
 Package rerunfilecheck Info: File `18.100A_ps9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11593 strings out of 478540
+ 11605 strings out of 478540
  125056,552014 words of node,token memory allocated
- 734 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 69 attribute, 58 gl
-ue_spec, 36 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1167,3:197,4:22,5:680,6:23,7:2286,8:54,9:1027,10:5,11:68
+ 782 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 85 attribute, 58 gl
+ue_spec, 44 attribute_list, 1 write nodes
+   avail lists: 1:1,2:1143,3:197,4:22,5:680,6:24,7:2575,8:54,9:1168,10:5,11:70
  31024 multiletter control sequences out of 65536+200000
  64 fonts using 5539471 bytes
  71i,12n,74p,534b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -601,9 +602,9 @@ ublic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 18.100A_ps9.pdf (3 pages, 111968 bytes).
+Output written on 18.100A_ps9.pdf (4 pages, 117039 bytes).
 
-PDF statistics: 122 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 131072)
+PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
