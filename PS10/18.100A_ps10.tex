@@ -133,6 +133,31 @@
 	Therefore $\lim \limits_{x \to c} \frac{f(x)}{g(x)} = \lim\limits_{x \to c} \frac{f'(x)}{g'(x)}$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\subsection*{(a.i)}
+\begin{proof}
+	Define $g(x) := f(x) - f(a)$ and $h(x) := x - a$. Then both $g$ and $h$ are continuous, and $g(a) = f(a) - f(a) = 0$, $h(a) = a - a = 0$. Also, $h'(x) = 1 \neq 0$ $\forall x$. Then by problem $\textbf{(4)}$:
+	\begin{align}
+		f'(a) &= \lim\limits{x \to a} \frac{f(x) - f(a)}{x - a} \\
+		&= \lim\limits_{x \to a} \frac{g(x)}{h(x)} \\
+		&= \lim\limits_{x \to a} \frac{g'(x)}{h'(x)} \\
+		&= \lim\limits_{x \to a} f'(x) \\
+		&= L.
+	\end{align}
+	Therefore $f'(a) = L$.
+\end{proof}
 
+\subsection*{(a.ii)}
+\begin{proof}
+	$f'(b) = \lim\limits_{x \to b} \frac{f(x) - f(b)}{x - b}$. As in part \textbf{(a.i)}, define $g(x) := f(x) - f(b)$, and $h(x) := x - b$, and proceed with L'Hopital's rule. 
+	
+	Then $f'(b) = L$.
+\end{proof}
+\subsection*{(b)}
+\begin{proof}
+	The function $f(x)$ is continuous $(a, b)$ and differentiable on $(a, c) \cup (c, b)$. Since $f$ is continuous on $[c, b)$ and differentiable on $(c, b)$, then by part \textbf{(a.i)} $f$ is differentiable at $c$ and $\lim\limits_{x \to c^+} f'(x) = L$. So $f'(x) = L$. Similarly, $f$ is continuous on $(a, c]$ and differentiable on $(a, c)$ so by part \textbf{(a.ii)} $f$ is differentiable at $c$ and $\lim\limits_{x \to c^-}f'(x) = L$. So $f'(x) = L$.
+	
+	Therefore $f'(c) = L$.
+\end{proof}
 
 \end{document}
