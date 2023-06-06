@@ -62,6 +62,23 @@
 	Therefore $f$ is constant. 
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section*{Problem 2}
+\begin{proof}
+	We compute:
+	\begin{align}
+		L &= \lim \limits_{x \to c} \frac{h(x) - h(c)}{x - c} \\
+		&= \lim\limits_{x \to c} \frac{f(x)g(x) - f(c)g(c)}{x - c} \\
+		&= \lim\limits_{x \to c} \frac{f(x)g(x) - f(x)g(c) + f(x)g(c) - f(c)g(c)}{x - c} \\
+		&= \lim\limits_{x \to c} \left[f(x) \left(\frac{g(x) - g(c)}{x - c}\right)\right] + g(x) \lim\limits_{x \to c}\left(\frac{f(x) - f(c)}{x - c}\right) \\ 
+	\end{align}
+	Since $f$ is continuous at $c$, and both $f$ and $g$ are differentiable at $c$, this gives us
+	\begin{equation}
+		L = f(c)g'(c) + g(c)f'(c),
+	\end{equation}
+	which exists.
+	
+	Therefore $f(x)g(x)$ is differentiable at $c$.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
