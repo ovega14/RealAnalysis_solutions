@@ -108,5 +108,31 @@
 	Thus, we conclude $f$ is Lipschitz $\iff$ $f'$ is bounded.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 4}
+\begin{proof}
+	Since $f, g$ are differentiable, then $f, g$ are continuous on $(a, b)$. Since $g(c) = 0$ and $g'(x) \neq 0$ $\forall x \in c$, then $g$ is either increasing or decreasing away from $0$ when $x \neq c$. Also, since $g$ is continuous, if $g=0$ for any $x \neq c$, then $\exists c_2 \in (a, b)$ such that $g'(c_2) = 0$, which is a contradiction.
+	
+	Thus, $g(x) \neq 0$ $\forall x \notin c$. Therefore $\frac{f(x)}{g(x)}$ is continuous on $(a, b)$ except at $x = c$.
+	
+	The derivatives of $f$ and $g$ at $c$ are: 
+	\begin{equation}
+		\lim\limits_{x \to c} \frac{f(x) - f(c)}{x - c} = \lim\limits_{x \to c} \frac{f(x)}{x - c} = f'(c),
+	\end{equation}
+	\begin{equation}
+		\lim\limits_{x \to c} \frac{g(x) - g(c)}{x - c} = \lim\limits_{x \to c} \frac{g(x)}{x - c} = g'(c).
+	\end{equation}
+	Then we compute
+	\begin{align}
+		\lim\limits_{x \to c} \left(\frac{f(x)}{g(x)}\right) &= \lim\limits_{x \to c} \left(\frac{f(x)}{x - c} \frac{x-c}{g(x)}\right) \\
+		&= \lim\limits_{x \to c} \left(\frac{f(x)}{x - c}\right) \lim\limits_{x \to c} \left(\frac{x - c}{g(x)}\right) \\
+		&= \frac{f'(c)}{g'(c)} \\
+		&= \lim\limits_{x \to c}\frac{f'(x)}{g'(x)},
+	\end{align}
+	by continuity. 
+	
+	Therefore $\lim \limits_{x \to c} \frac{f(x)}{g(x)} = \lim\limits_{x \to c} \frac{f'(x)}{g'(x)}$.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \end{document}
