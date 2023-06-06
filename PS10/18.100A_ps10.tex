@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\usepackage[]{amsmath}
+\usepackage[parfill]{parskip} %avoid indent when skipping lines
+\usepackage[toc,page]{appendix}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={18.100A-ps10},
+	pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
+\newcommand{\R}{\mathbb{R}} %the real numbers
+\newcommand{\N}{\mathbb{N}} %the natural numbers
+\newcommand{\M}{\mathcal{M}} %set of all Lebesgue-measurable sets
+\newcommand{\Q}{\mathbb{Q}} % the rational numbers
+
+\title{18.100A Assignment 10}
+\author{Octavio Vega}
+\date\today
+
+\begin{document}
+\maketitle
+	
+\section*{Problem 1}
+\subsection*{(a)}
+\begin{proof}
+	Suppose $\exists C \geq 0$ such that $\forall x, y \in I$,
+	\begin{equation}
+		|f(x) - f(y)| \leq C |x - y|^\alpha.
+	\end{equation}
+	Let $\epsilon > 0$. Choose $\delta = \left(\frac{\epsilon}{C}\right)^\frac{1}{\alpha}$. Then if $|x - y| < \delta$, we get
+	\begin{align}
+		|f(x) - f(y)| & \leq C |x - y|^\alpha \\
+		& < C \delta^\alpha \\
+		&= C \frac{\epsilon}{C} \\
+		&= \epsilon.
+	\end{align}
+	Therefore $f$ is uniformly continuous on $I$.
+\end{proof}
+
+\subsection*{(b)}
+\begin{proof}
+	Suppose $\exists C \geq 0$ such that $\forall x, y \in I$, $|f(x) - f(y)| \leq C |x - y|^\alpha$.
+	
+	Since $\alpha > 1$, then $\alpha = 1 + r$ for some $0 < r$, we have
+	\begin{align}
+		& \implies 0 \leq |f(x) - f(y)| \leq C |x - y|^{1 + r} \\
+		& \implies 0 \leq \frac{|f(x) - f(y)|}{|x - y|} \leq C |x - y|^r \\
+		& \implies \lim\limits_{x \to y} 0 \leq \lim\limits_{x \to y} \frac{|f(x) - f(y)|}{|x - y|} \leq C \lim\limits_{x \to y}|x - y|^r \\
+		& \implies 0 \leq \lim\limits_{x \to y} \frac{|f(x) - f(y)|}{|x - y|} \leq 0.
+	\end{align} 
+	Then by the squeeze theorem, $\lim \limits_{x \to y} \frac{|f(x) - f(y)|}{|x - y|} = 0$. Thus $\forall y \in I$, $f'(y) = 0$.
+	
+	Therefore $f$ is constant. 
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
