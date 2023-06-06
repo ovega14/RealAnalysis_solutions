@@ -80,5 +80,33 @@
 	Therefore $f(x)g(x)$ is differentiable at $c$.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	($\Rightarrow$) Suppose $f$ is Lipschitz. Then $\exists L \geq 0$ such that $\forall x, y \in \R$,
+	\begin{equation}
+		\left|\frac{f(x) - f(y)}{x - y}\right| \leq L.
+	\end{equation}
+	Since $f$ is differentiable, we have
+	\begin{equation}
+		|f'(y)| = \lim\limits_{x \to y} \left|\frac{f(x) - f(y)}{x - y}\right| \leq \lim\limits_{x \to y} L,
+	\end{equation}
+	so $\forall y \in \R$, $|f'(y)| \leq L$. 
+	
+	Therefore $f'$ is bounded.
+	
+	($\Leftarrow$) Suppose $f'$ is bounded.
+	
+	Then $\exists B \geq 0$ such that $|f'(x)| \leq B$ $\forall x \in \R$. Let $x, y \in \R$. Then by the mean value theorem, $\exists c \in \R$ such that $f(x) - f(y) = (x - y)f'(c)$, i.e.
+	\begin{align}
+		|f(x) - f(y)| &= |x - y||f'(c)| \\
+		& \leq |x - y| B.
+	\end{align}
+	Choose $L = B$, and we see
+	\begin{equation}
+		|f(x) - f(y)| \leq L |x - y|.
+	\end{equation}
+	Thus, we conclude $f$ is Lipschitz $\iff$ $f'$ is bounded.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
