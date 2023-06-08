@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\usepackage[]{amsmath}
+\usepackage[parfill]{parskip} %avoid indent when skipping lines
+\usepackage[toc,page]{appendix}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={18.100A-ps11},
+	pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
+\newcommand{\R}{\mathbb{R}} %the real numbers
+\newcommand{\N}{\mathbb{N}} %the natural numbers
+\newcommand{\M}{\mathcal{M}} %set of all Lebesgue-measurable sets
+\newcommand{\Q}{\mathbb{Q}} % the rational numbers
+
+\title{18.100A Assignment 11}
+\author{Octavio Vega}
+\date\today
+
+\begin{document}
+\maketitle
+	
+\section*{Problem 1}
+\begin{proof}
+	Let $f(x) = \frac{1}{1121}x^{1121} + \frac{1}{2021}x^{2021} + x + 1$. We compute the derivative:
+	\begin{equation}
+		f'(x) = x^{1120} + x^{2020} + 1
+	\end{equation}
+\end{proof}
+
+\end{document}
