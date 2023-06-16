@@ -33,8 +33,18 @@
 \begin{proof}
 	Let $f(x) = \frac{1}{1121}x^{1121} + \frac{1}{2021}x^{2021} + x + 1$. We compute the derivative:
 	\begin{equation}
-		f'(x) = x^{1120} + x^{2020} + 1
+		f'(x) = x^{1120} + x^{2020} + 1.
 	\end{equation}
+	Hence $f'(x) > 0$ $\forall x \in \R$, so $f(x)$ is increasing.
+	
+	Suppose $f(x)$ has $n$ real roots, where $n > 1$. Then $\exists x_1, x_2, ..., x_n$ such that $f(x_1) = \cdots = f(x_n) = 0$. Since $f(x)$ is polynomial, then $f$ is continuous $\forall x$ and differentiable on $\R$. By Rolle's theorem, $\exists c \in (x_1, x_2)$ such that $f'(c) = 0$, which is a contradiction since $f'(x) > 0$ $\forall x$. Thus $f$ cannot have more than one real root.
+	
+	Now suppose $f(x)$ has no real roots. Then either $f(x) > 0$ $\forall x$ or $f(x) < 0$ $\forall x$. Choose $x_0 = 1$. Then $f(x_0) = \frac{1}{1121} + \frac{1}{2021} + 2 > 0$. Choose $x^* = -10$. Then $f(x^*) = -\frac{10^{1121}}{1121} - \frac{10^{2021}}{2021} + 2 < 0$.
+	Then by continuity, $f(x)$ has at least one real root, which is a contradiction. Thus $f$ must have at least one real root.
+	
+	So we have the number of real roots $1 \leq n \leq 1$, so $n = 1$.
+	
+	Therefore $f$ has exactly one real root.
 \end{proof}
 
 \end{document}

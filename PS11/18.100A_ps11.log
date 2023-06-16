@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  8 JUN 2023 18:04
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  16 JUN 2023 15:24
  restricted system commands enabled.
 **18.100A_ps11.tex
 (./18.100A_ps11.tex
@@ -584,7 +584,7 @@ Here is how much of LuaTeX's memory you used:
  537 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 13 attribute, 58 gl
 ue_spec, 8 attribute_list, 1 write nodes
-   avail lists: 1:1,2:231,3:56,4:16,5:68,6:12,7:508,8:36,9:138,10:3,11:12
+   avail lists: 1:1,2:378,3:120,4:16,5:200,6:20,7:2300,8:39,9:266,10:6,11:68
  31024 multiletter control sequences out of 65536+200000
  64 fonts using 5539471 bytes
  71i,6n,74p,535b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -594,12 +594,16 @@ ue_spec, 8 attribute_list, 1 write nodes
 /c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><//?
 /c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 18.100A_ps11.pdf (1 page, 50249 bytes).
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on 18.100A_ps11.pdf (1 page, 83704 bytes).
 
-PDF statistics: 64 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
