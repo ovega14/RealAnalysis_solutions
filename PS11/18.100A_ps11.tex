@@ -111,5 +111,34 @@ We proceed again using L'Hopital's rule:
 	To prove that $f$ cannot have a local minimum, repeat the same proof above with $g(x) = -f(x)$, and we are done.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\subsection*{(a)}
+We compute
+\begin{align}
+	\|\underline{x}^{(r)}\| &= \sup_k \left\{x_k^{(r)} - x_{k-1}^{(r)}\right\} \\
+	&= \sup_k \left\{(b - a)\frac{k}{r} - (b-a)\frac{k-1}{r}\right\} \\
+	&= \sup_k \left\{\frac{b-a}{r}\right\}.
+\end{align}
+Thus $\|\underline{x}^{(r)}\| = \frac{b-a}{r}$.
+
+\subsection*{(b)}
+\begin{proof}
+	We write and compute the Riemann sum as
+	\begin{align}
+		S_f\left(\underline{x}^{(r)}, \underline{\xi}^{(r)}\right) &= \sum_{k=1}^r f\left(\xi_k^{(r)}\right)\left(x_k^{(r)} - x_{k-1}^{(r)}\right) \\
+		&= \sum_{k=1}^r f\left(a + (b-a)\frac{k}{r}\right)\left(\frac{b-a}{r}\right) \\
+		&= \sum_{k=1}^r \left[\alpha \left(a + (b-a)\frac{k}{r}\right) + \beta\right]\left(\frac{b-a}{r}\right) \\
+		&= \sum_{k=1}^r \left[\alpha a + \alpha \frac{bk}{r} - \alpha \frac{ak}{r} + \beta\right] \left(\frac{b-a}{r}\right) \\
+		&= \sum_{k=1}^r \left(\frac{\alpha a b}{r} + \frac{\alpha b^2 k}{r^2} - \frac{\alpha a b k}{r^2} + \frac{\beta b}{r} - \frac{\alpha a^2}{r} - \frac{\alpha^2 b k a}{r^2} + \frac{\alpha a^2 k}{r^2} - \frac{\beta a}{r}\right)\\
+		&= \alpha a b + \frac{\alpha b^2}{r^2}\sum_{k=1}^r k - \frac{\alpha a b}{r^2}\sum_{k=1}^r k + \beta b - \alpha a^2 - \frac{\alpha^2 b a}{r^2}\sum_{k=1}^r k + \frac{\alpha a^2}{r^2}\sum_{k=1}^2 k - \beta a \\
+		&= \alpha a b + \frac{\alpha b^2}{r^2}\frac{r(r+1)}{2} - \frac{\alpha a b}{r^2}\frac{r(r+1)}{2} + \beta b - \alpha a^2 - \frac{\alpha b a}{r^2}\frac{r(r+1)}{2} + \frac{\alpha a^2}{r^2}\frac{r(r+1)}{2} - \beta a \\
+		&= \alpha a b + \frac{\alpha b^2}{2} + \frac{\alpha b^2}{2 r} - \frac{\alpha a b}{2} - \frac{\alpha a b}{2 r} + \beta b - \alpha a^2 - \frac{\alpha^2 b a}{2} - \frac{\alpha^2 b a}{2 r} + \frac{\alpha a^2}{2} + \frac{\alpha a^2}{2r} - \beta a.
+	\end{align}
+	Now sending $r \to \infty$, we find
+	\begin{equation}
+		\lim\limits_{r \to \infty} S_f \left(\underline{x}^{(r)}, \underline{\xi}^{(r)}\right) = \alpha \left(\frac{b^2 - a^2}{2}\right) + \beta (b - a),
+	\end{equation}
+	as desired.
+\end{proof}
 
 \end{document}
