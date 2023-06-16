@@ -46,5 +46,38 @@
 	
 	Therefore $f$ has exactly one real root.
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 2}
+\subsection*{(a)}
+Let $f(x) = \sin(x)$ and $x_0 = 0$. We compute
+\begin{equation}
+	P_4(x) = \sum_{k=0}^4 \frac{f^{(k)}(x_0)}{k!}(x - x_0)^k.
+\end{equation}
+The derivatives are
+\begin{align}
+	f'(x) = \cos(x) &\implies f'(x_0) = \cos(0) = 1 \\
+	f''(x) = -\sin(x) &\implies f''(x_0) = -\sin(0) = 0 \\
+	f'''(x) = -\cos(x) &\implies f'''(x_0) = -\cos(0) = -1 \\
+	f^{(4)}(x) = \sin(x) &\implies f^{(4)}(x_0) = \sin(0) = 0.
+\end{align}
+Therefore, the fourth Taylor polynomial is
+\begin{equation}
+	P_4(x) = x - \frac{1}{3!}x^3.
+\end{equation}
+
+\subsection*{(b)}
+Let $f(x) = \frac{1}{1-x}$ and $x_0 = -1$. The derivatives are
+\begin{align}
+	f'(x) = \frac{1}{(1-x)^2} &\implies f'(x_0) = \frac{1}{4} \\
+	f''(x) = \frac{2}{(1-x)^3} &\implies f''(x_0) = \frac{1}{4} \\
+	f'''(x) = \frac{6}{(1-x)^4} &\implies f'''(x_0) = \frac{3}{8} \\
+	f^{(4)}(x) = \frac{24}{(1-x)^5} &\implies f^{(4)}(x_0) = \frac{3}{4}.
+\end{align}
+Therefore, the fourth Taylor polynomial is
+\begin{equation}
+	P_4(x) = \frac{1}{2} + \frac{1}{4}(x + 1) + \frac{1}{8}(x + 1)^2 + \frac{1}{16}(x + 1)^3 + \frac{1}{32}(x + 1)^4.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \end{document}
