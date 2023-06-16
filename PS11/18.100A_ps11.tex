@@ -78,6 +78,22 @@ Therefore, the fourth Taylor polynomial is
 	P_4(x) = \frac{1}{2} + \frac{1}{4}(x + 1) + \frac{1}{8}(x + 1)^2 + \frac{1}{16}(x + 1)^3 + \frac{1}{32}(x + 1)^4.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\subsection*{(a)}
+We compute using L'Hopital:
+\begin{align}
+	\lim\limits_{x \to 0} \frac{x - \sin(x)}{x^3} &= \lim\limits_{x \to 0}\frac{1 - \cos(x)}{3x^2} \\
+	&= \lim\limits_{x \to 0} \frac{\sin(x)}{6x} \\
+	&= \lim\limits_{x \to 0} \frac{\cos(x)}{6} \\
+	&= \frac{1}{6}.
+\end{align}
 
+\subsection*{(b)}
+We proceed again using L'Hopital's rule:
+\begin{align}
+	\lim\limits_{x \to \frac{\pi}{2}} \frac{1 - \sin(x)}{\left(x - \frac{\pi}{2}\right)^2} &= \lim\limits_{x \to \frac{\pi}{2}} \frac{-\cos(x)}{2 \left(x - \frac{\pi}{2}\right)} \\
+	&= -\frac{1}{2}\lim\limits_{x \to \frac{\pi}{2}} \sin(x) \\
+	&= -\frac{1}{2}.
+\end{align}
 
 \end{document}
