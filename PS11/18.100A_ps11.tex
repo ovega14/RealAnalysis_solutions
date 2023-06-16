@@ -95,5 +95,21 @@ We proceed again using L'Hopital's rule:
 	&= -\frac{1}{2}\lim\limits_{x \to \frac{\pi}{2}} \sin(x) \\
 	&= -\frac{1}{2}.
 \end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 4}
+\begin{proof}
+	(By contradiction.) Assume without loss of generality that $f$ has a local maximum at $c$. Then $\exists \delta > 0$ such that $\forall x \in (a, b)$, if $|x - c| < \delta$ then $f(c) \geq f(x)$.
+	
+	\underline{Case 1}: $f$ is constant around $c$. Then $\forall |x - c| < \delta$, we have $f'(x) = 0$. By differentiating twice, then we must have $f'''(c) = 0$, which is a contradiction since we assumed $f'''$ to be positive.
+	
+	So $f$ cannot have a local max at $c$.
+	
+	\underline{Case 2}: $f$ is not constant around $c$. Then $\forall |x - c| < \delta$, $f(c) > f(x)$. By assumption, $f'''(c) > 0$, so $f''$ is increasing at $c$. Since $f''(c) = 0$, then $f''(x) > 0$ $\forall x > c$. Thus $f'$ is increasing for $x > c$. Since $f'(c)=0$ also by assumption of local maximum, then $f'(x) > 0$ for $x > c$. Thus $f$ is increasing for $x > c$. This means that $f(x) > f(c)$ for $x > c$, which is a contradiction since we assumed that $f(c)$ is a local maximum.
+	
+	Thus $f$ has no local maximum at $c$. 
+	
+	To prove that $f$ cannot have a local minimum, repeat the same proof above with $g(x) = -f(x)$, and we are done.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
