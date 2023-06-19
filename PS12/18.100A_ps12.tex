@@ -30,6 +30,34 @@
 \maketitle
 	
 \section*{Problem 1}
+\subsection*{(a)}
+\begin{proof}
+	Suppose $\exists c \in [a, b]$ such that $f(c) > 0$. Since $f$ is continuous, $\exists \delta > 0$ such that if $|x - c| < \delta$, then $|f(x) - f(x)| < \frac{f(c)}{2}$, i.e. $\frac{f(c)}{2} < f(x)$. We compute
+	\begin{align}
+		0 &> \int_a^b f \\
+		&> \int_a ^b \frac{f(c)}{2} \\
+		&= \frac{f(c)}{2}(b - a) \\
+		&> 0,
+	\end{align}
+	i.e. $0 > 0$ $(\Rightarrow \Leftarrow)$, which is cleary a contradiction.
+	
+	Therefore $f(x) = 0$ $\forall x \in [a, b]$.  
+\end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Let $E = \int_a ^b (u')^2 \mathrm{d}x$. Then $E \geq 0$ since $(u')^2 \geq 0$. Using integration by parts, we have
+	\begin{align}
+		E &= \int_a ^b u' u' \mathrm{d}x \\
+		&= u u' \big |_a ^b - \int_a ^b u u'' \mathrm{d}x \\
+		&= u'(b) u(b) - u'(a) u(a) - \int_a ^b u (V u) \mathrm{d}x \\
+		&= - \int_a ^b V u^2 \mathrm{d}x.
+	\end{align}
+	But $V(x) \geq 0$ and $u^2 \geq 0$, so $-(Vu^2) \leq 0$, hence $E \leq 0$. Thus $E = 0$, which must mean that 
+	\begin{equation}
+		\int_a ^b (u')^2 \mathrm{d}x = 0,
+	\end{equation}
+	and by part \textbf{(a)}, this implies that $(u')^2 = 0$  $\forall x \in [a, b]$. Hence $u'(x) = 0$ for all $x$, and since $u(a) = 0$, then $u$ remains constant at $0$; i.e. $u = 0$ everywhere.
+\end{proof}
 	
 \end{document}
