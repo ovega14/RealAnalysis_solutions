@@ -116,5 +116,16 @@ Let $\epsilon > 0$. Choose $M = \frac{1}{\log(\epsilon)}$. Then $\forall x \in [
 Therefore the limit is uniform on $[0, 1]$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 5}
+\begin{proof}
+	$\forall \epsilon > 0$, $\exists M_0 \in \N$ such that $\forall n \geq M_0$ and $\forall x \in A$, $|f_n(x) - f(x)| < \frac{\epsilon}{2}$. Similarly, $\forall \epsilon > 0$, $\exists M_1 \in \N$ such that $\forall n \geq M_1$ and $\forall x \in A$, $|g_n(x) - g(x)| < \frac{\epsilon}{2}$. 
+	
+	Let $\epsilon > 0$. Choose $M = \max\{M_0, M_1\}$. Then $\forall n \geq M$, 
+	\begin{align}
+		|f_n(x) +g_n(x) - (f(x) + g(x))| & \leq |f_n(x) - f(x)| + |g_n(x) - g(x)| \\
+		& < \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+		&= \epsilon.
+	\end{align}
+	Therefore $f_n + g_n \to f + g$ uniformly on $A$.
+\end{proof}
 
 \end{document}

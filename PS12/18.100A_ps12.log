@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  19 JUN 2023 17:24
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.2) (format=lualatex 2021.9.11)  19 JUN 2023 17:29
  restricted system commands enabled.
 **18.100A_ps12.tex
 (./18.100A_ps12.tex
@@ -572,26 +572,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (./
-18.100A_ps12.aux)
+{C:/Users/vega0/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
 
-Package rerunfilecheck Warning: File `18.100A_ps12.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `18.100A_ps12.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  464A7EFF14137B7C71CD0AC903F963E3;70.
+(./18.100A_ps12.aux)
+Package rerunfilecheck Info: File `18.100A_ps12.out' has not changed.
+(rerunfilecheck)             Checksum: 464A7EFF14137B7C71CD0AC903F963E3;70.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11602 strings out of 478540
+ 11608 strings out of 478540
  125056,552014 words of node,token memory allocated
  602 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 25 attribute, 58 gl
 ue_spec, 14 attribute_list, 1 write nodes
-   avail lists: 1:1,2:999,3:216,4:20,5:574,6:24,7:3251,8:40,9:1040,10:7,11:90
- 31026 multiletter control sequences out of 65536+200000
+   avail lists: 1:1,2:1026,3:216,4:20,5:595,6:24,7:3251,8:40,9:1062,10:7,11:90
+ 31028 multiletter control sequences out of 65536+200000
  66 fonts using 5802847 bytes
  71i,13n,74p,535b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-bold.otf><//
@@ -610,9 +605,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 18.100A_ps12.pdf (3 pages, 137759 bytes).
+Output written on 18.100A_ps12.pdf (4 pages, 142236 bytes).
 
-PDF statistics: 144 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 155 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 131072)
+ 9 words of extra memory for PDF output out of 10000 (max. 100000000)
 
