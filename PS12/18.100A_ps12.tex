@@ -72,4 +72,16 @@ Differentiating, we get
 	&= e^{x^2} + e^{x^2}.
 \end{align}
 Thus $\frac{\mathrm{d}}{\mathrm{d}x}\left(\int_{-x}^x e^{s^2} \mathrm{d}s\right) = 2e^{x^2}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\begin{proof}
+	Define $G(x) = \int_a ^x f(t) \mathrm{d}t$. By the fundamental theorem of calculus, $G$ is continuous on $[a, b]$. Note that $G(x) = 0$  $\forall x \in \Q \cap [a, b]$. We now claim that $G(x) = 0$ on $[a, b]$. 
+	
+	Suppose $\exists c \in [a, b]$ such that $G(c) \neq 0$. For some $x \in [a, b]$, let $\epsilon = \frac{|G(x)|}{2}$ and let $\delta > 0$. Then $\forall x$ such that $|x - c| < \delta$, we have $|G(x) - G(c)| < \epsilon$ since $G$ is continuous. $\exists c \in [a, b] \cap \Q$ such that $|x - c| < \delta$. But then $|G(x) - G(c)| = |G(x)| > \frac{|G(x)|}{2} = \epsilon$, which is a contradiction, since we assumed $G$ to be continuous. Thus $G(x) = 0$ on $[a, b]$, which proves the claim.
+	
+	Thus, $G(x) = \int_a ^x f(t) \mathrm{d}t = 0$ on $[a, b]$. Since $G$ is constant, then $G' = 0$ on $[a, b]$. By the fundamental theorem of calculus, $G'(x) = f(x) = 0$ $\forall x \in [a, b]$, and we are done.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \end{document}
