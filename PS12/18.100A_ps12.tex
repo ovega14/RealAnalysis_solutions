@@ -82,6 +82,39 @@ Thus $\frac{\mathrm{d}}{\mathrm{d}x}\left(\int_{-x}^x e^{s^2} \mathrm{d}s\right)
 	Thus, $G(x) = \int_a ^x f(t) \mathrm{d}t = 0$ on $[a, b]$. Since $G$ is constant, then $G' = 0$ on $[a, b]$. By the fundamental theorem of calculus, $G'(x) = f(x) = 0$ $\forall x \in [a, b]$, and we are done.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 4}
+\subsection{(a)}
+Let $f_n(x) = \frac{e^{\frac{x}{n}}}{n}$ for each $n \in \N$. Then by continuity, we have
+\begin{align}
+	\lim\limits_{n \to \infty} f_n(x) &= \lim\limits_{n \to \infty} e^{\frac{x}{n}} \cdot \lim\limits_{n \to \infty} \frac{1}{n} \\
+	&= e^{x \lim\limits_{n \to \infty}\frac{1}{n}} \cdot \lim\limits_{n \to \infty} \frac{1}{n} \\
+	&= e^0 \cdot 0 \\
+	&= 0.
+\end{align}
+Therefore $f_n \to 0$ pointwise.
 
+\subsection*{(b)}
+Let $M \in \N$. Choose $\epsilon_0 = 1$, $x = n \ln(n)$, and $n = M$. Then
+\begin{align}
+	|f_n(x) - f(x)| &= \left|\frac{e^{\frac{x}{n}}}{n}\right| \\
+	&= \frac{e^{\ln(M)}}{M} \\
+	&= \frac{M}{M} \\
+	&= 1 \\
+	&= \epsilon_0.
+\end{align}
+Therefore the limit is NOT uniform on $\R$.
+
+\subsection*{(c)}
+Let $\epsilon > 0$. Choose $M = \frac{1}{\log(\epsilon)}$. Then $\forall x \in [0, 1]$ and $\forall n \geq M$, we have
+\begin{align}
+	|f_n(x) - 0| &= \left|\frac{e^\frac{x}{n}}{n}\right| \\
+	&< \frac{e^\frac{1}{n}}{n} \\
+	&< e^\frac{1}{n} \\
+	&< e^{\log(\epsilon)} \\
+	&= \epsilon.
+\end{align}
+Therefore the limit is uniform on $[0, 1]$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
 
 \end{document}
