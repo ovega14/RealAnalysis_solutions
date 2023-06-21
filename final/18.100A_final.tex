@@ -41,5 +41,38 @@ Let $S \subset \R$. A function $f: S \to \R$ is \textbf{not uniformly continuous
 Let $S \subset \R$. A sequence of functions $f_n: S \to \R$ \textbf{does not converge uniformly} to $f: S \to \R$ if $\exists \epsilon_0 > 0$ such that $\forall M \in \N$ $\exists n \geq M$ and $x \in S$ such that $|f_n(x) - f(x)| \geq \epsilon_0$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem 2}
+\subsection*{(a)}
+\subsubsection*{(i)}
+A continunous function on $(0, 1)$ with neither a global minimum or maximum:
+
+Let $f(x) = 1$ $\forall x \in (0, 1)$. Then $\forall x, y \in (0, 1)$, $f(x) = f(y)$ so $f$ has no absolute maximum or minimum, and $f$ is constant and therefore continuous.
+
+\subsubsection*{(ii)}
+A function on $[0, 1]$ with absolute minimum at $0$, absolute maximum at $1$, and such that $\exists y \in (f(0), f(1))$ not in the range of $f$:
+
+Define $f$ via
+\begin{align}
+	f(x) := 
+	\begin{cases}
+		x, \quad &x \in \left(0, \frac{1}{2}\right) \cap \left(\frac{1}{2}, 1\right] \\
+		-1, &x = 0 \\
+		-\frac{1}{2}, &x = \frac{1}{2}.
+	\end{cases}
+\end{align}
+Then, for example, $-\frac{3}{4} \in (-1, 1) = \left(f(0), f(1)\right)$, but $-\frac{3}{4}$ is not in the range of $f$. Also, $f$ has an absolute minimum and maximum at 0 and 1, respectively. 
+
+\subsection*{(b)}
+\begin{proof}
+	Let $\epsilon > 0$. Since $f$ is continuous, then $\exists \delta_0 > 0$ such that if $|x - c| < \delta_0$ then $|f(x) - f(c)| < \frac{\epsilon}{2}$. Similarly, since $g$ is continuous, then $\exists \delta_1 > 0$ such that if $|x - c| < \delta_1$ then $|g(x) - g(c)| < \frac{\epsilon}{2}$. 
+	
+	Choose $\delta_0, \delta_1$ such that $|f(x)| + |g(c)| < 2$, and let $\delta = \min\{\delta_0, \delta_1\}$. Then if $|x - c| < \delta$, we have
+	\begin{align}
+		|f(x)g(x) - f(c)g(c)| &= |f(x)g(x) - f(x)g(c) + f(x)g(c) - f(c)g(c)| \\
+		&\leq |f(x)||g(x) - g(c)| + |g(c)||f(x) - f(c) \\
+		&< |f(x)|\frac{\epsilon}{2} + |g(c)|\frac{\epsilon}{2} \\
+		&< \epsilon.
+	\end{align} 
+	Therefore, the product $fg$ is continuous at $c$. 
+\end{proof}
 
 \end{document}
