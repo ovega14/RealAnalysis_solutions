@@ -74,5 +74,29 @@ Then, for example, $-\frac{3}{4} \in (-1, 1) = \left(f(0), f(1)\right)$, but $-\
 	\end{align} 
 	Therefore, the product $fg$ is continuous at $c$. 
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 3}
+\subsection*{(a)}
+\begin{proof}
+	Let $\{x_n\}_n$ be a sequence of elements in $[a, b]$. Choose $B = \max\{|a|, |b|\}$. Then $\forall n \in \N$, $|x_n| \leq B$, so the sequence $\{x_n\}_n$ is bounded.
+	
+	By the Bolzano-Weierstrass theorem, $\exists$ a subsequence $\{x_{n_k}\}_k \subset [a, b]$ that converges, i.e. such that $x_{n_k} \to x$ as $k \to \infty$ for some $x \in \R$. Since $[a, b]$ is closed, then $x \in [a, b]$.
+	
+	Therefore $[a, b]$ is compact.
+\end{proof}
 
+\subsection*{(b)}
+\begin{proof}
+	Let $\{x_n\}_n$ be a sequence of elements in $[a, b]$. Since $[a, b]$ is compact, $\exists \{x_{n_k}\}_k \subset [a, b]$ such that $x_{n_k} \to x$ for some $x \in [a, b]$. 
+	
+	Then $\{f(x_{n_k})\}_k$ is a subsequence in $[a, b]$, and since $f$ is continuous we have
+	\begin{align}
+		\lim\limits_{k \to \infty}f\left(x_{n_k}\right) &= f\left(\lim\limits_{k \to \infty} x_{n_k}\right) \\
+		&= f(x) \in f \left([a, b]\right),
+	\end{align}
+	so the subsequence $\{f_{n_k}\}_k$ of $\{f_n\}_n$ converges in $[a, b]$. 
+	
+	Therefore $f\left([a, b]\right)$ is compact.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
