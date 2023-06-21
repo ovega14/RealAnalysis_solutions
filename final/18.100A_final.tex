@@ -135,5 +135,38 @@ $f(x) = |x|$ is continuous but not differentiable at $0$. Checking this is simpl
 	Therefore $f$ is differentiable at $0$. 
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 5}
+\subsection*{(a)}
+\begin{proof}
+	Let $f(x) = e^x$. By Taylor's theorem, $\forall x \in [-R, R]$ $\exists c \in (0, x)$ such that
+	\begin{equation}
+		f(x) = \sum_{k=0}^n \frac{1}{k!}f^{(k)}(0)x^k + \frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}
+	\end{equation},
+	which is equivalent to
+	\begin{equation}
+		e^x - \sum_{k=0}^n \frac{x^k}{k!} = \frac{e^c}{(n+1)!}x^{n+1}
+	\end{equation}
+	But $|x| \leq R$ and $c < R$, therefore
+	\begin{equation}
+		e^x - \sum_{k=0}^n \frac{x^k}{k!} \leq \frac{e^R}{(n+1)!}R^{n+1},
+	\end{equation}
+	as desired.
+\end{proof}
+
+\subsection*{(b)}
+\begin{proof}
+	Using integration by parts, we have
+	\begin{align}
+		\int_c ^x f''(t) (x - t) \mathrm{d}t &= (x - t) f'(t) \big|_c ^x + \int_c ^x f'(t) \mathrm{d}t \\
+		&= -(x - c) f'(c) + f(x) - f(c),
+	\end{align}
+	i.e. 
+	\begin{equation}
+		f(x) = f(c) + f'(c) (x - c) + \int_c ^x f''(t) (x - c) \mathrm{d}t,
+	\end{equation}
+	as desired.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \end{document}
