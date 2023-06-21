@@ -99,4 +99,41 @@ Then, for example, $-\frac{3}{4} \in (-1, 1) = \left(f(0), f(1)\right)$, but $-\
 	Therefore $f\left([a, b]\right)$ is compact.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 4}
+\subsection*{(a)}
+\subsubsection*{(i)}
+\begin{proof}
+	Since $f$ is differentiable at $c$. then the limit
+	\begin{equation}
+		f'(c) = \lim\limits_{x \to c} \frac{f(x) - f(c)}{x - c}
+	\end{equation}
+	exists. Then we have
+	\begin{align}
+		\lim\limits_{x \to c} \left(f(x) - f(c)\right) &= \lim\limits_{x \to c} \left[\left(\frac{f(x) - f(c)}{x-c}\right)(x - c)\right] \\
+		&= \lim\limits_{x \to c} \left(\frac{f(x) - f(c)}{x - c}\right) \cdot \lim\limits_{x \to c} (x - c) \\
+		&= f'(c) \lim\limits_{x \to c} (x - c) \\
+		&= 0.
+	\end{align}
+	Therefore $\lim\limits_{x \to c} f(x) = f(c)$, so $f$ is continuous at $c$.
+\end{proof}
+
+\subsubsection*{(ii)} 
+Consider the following example disproving the converse of part \textbf{(i)}:
+
+$f(x) = |x|$ is continuous but not differentiable at $0$. Checking this is simple: we simply compute the left and right limits of the difference quotient and find that they do not agree, signifying that the limit (derivative) does not exist at $0$. 
+
+\subsection*{(b)}
+\begin{proof}
+	Using the limit definition of the derivative, we have
+	\begin{align}
+		f'(0) &= \lim\limits_{x \to 0} \frac{x^2 \sin\left(\frac{1}{x}\right)}{x} \\
+		&= \lim\limits_{x \to 0} \frac{\sin\left(\frac{1}{x}\right)}{\frac{1}{x}} \\
+		&= 0,
+	\end{align}
+	so the limit exists.
+	
+	Therefore $f$ is differentiable at $0$. 
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
