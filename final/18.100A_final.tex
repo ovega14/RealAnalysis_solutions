@@ -167,6 +167,81 @@ $f(x) = |x|$ is continuous but not differentiable at $0$. Checking this is simpl
 	as desired.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 6}
+\subsection*{(a)}
+We compute using integration by parts:
+\begin{align}
+	\int_a ^1 x \log(x) \mathrm{d}x = \frac{x^2}{2}\log(x)\big|_a ^1 - \int_a ^1 \frac{x}{2}\mathrm{d}x \\
+	&= \frac{1}{2}\log(1) - \frac{a^2}{2}\log(a) - \frac{x^2}{4}\big|_a ^1 \\
+	&= -\frac{a^2}{2}\log(a) - \frac{1}{4} + \frac{a^2}{4}. 
+\end{align}
+Taking the limit, we have
+\begin{align}
+	\int_0 ^1 x \log(x) \mathrm{d}x &:= \lim\limits_{a \to 0^+} \int_a ^1 x \log(x) \mathrm{d}x \\
+	&= -\frac{1}{4} + \lim\limits_{a \to 0^+} \left[\frac{a^2}{4} - \frac{a^2}{2}\log(a)\right] \\
+	&= -\frac{1}{4} - \frac{1}{2} \lim\limits_{a \to 0^+} \left[a^2 \log(a)\right]. \label{6a1}
+\end{align}
+Let $f(a) = \log(a)$ and $g(a) = \frac{1}{a^2}$. Then for $a \in (0, 1)$, $g(a) \neq 0$, $f(a) \to \infty$ as $a \to 0^+$, and $g(a) \to \infty$ as $a \to 0^+$. Computing the derivatives, we find $f'(a) = \frac{1}{a}$ and $g'(a) = -\frac{2}{a^3}$. 
+
+Let $L = \lim\limits_{a \to 0^+} \frac{\frac{1}{a}}{-\frac{2}{a^3}} = 0$. Then by L'Hopital's rule, we find
+\begin{equation}
+	\lim\limits_{a \to 0^+} \frac{f(a)}{g(a)} = \lim\limits_{a \to 0^+} a^2 \log(a) = 0.
+\end{equation}
+Therefore, substituting into $\eqref{6a1}$ gives 
+\begin{equation}
+	\int_0 ^1 x\log(x) \mathrm{d}x = -\frac{1}{4}.
+\end{equation}
+
+\subsection*{(b)}
+\begin{proof}
+	Let $f_n(x) = x^n \sin(x)$. Then since $\sin(x) \leq x$, we have
+	\begin{equation}
+		f_n(x) \leq x^{n+1}.
+	\end{equation}
+	This gives
+	\begin{align}
+		\int_0 ^1 f_n(x) \mathrm{d}x &\leq \int_0 ^1 x^{n+1} \mathrm{d}x \\
+		&= \frac{x^{n+2}}{n+2}\big|_0 ^1 \\
+		&= \frac{1}{n+2}.
+	\end{align}
+	So,
+	\begin{equation}
+		\lim\limits_{n \to \infty}\int_0 ^1 f_n(x) \mathrm{d}x \leq \lim\limits_{n \to \infty} \frac{1}{n+2} = 0.
+	\end{equation}
+	Also, $f_n(x) \geq 0$ $\forall x \in [0, 1]$. Therefore the squeeze theorem implies that
+	\begin{equation}
+		\lim\limits_{n \to \infty} \int_0 ^1 x^n \sin(x) \mathrm{d}x = 0,
+	\end{equation}
+	as desired.
+\end{proof}
+
+\subsection*{(c)}
+\begin{proof}
+	Using integration by parts, we have
+	\begin{align}
+		\int_{-\pi}^\pi \sin(nx) f(x) \mathrm{d}x &= -\frac{1}{n}f(x) \cos(nx)\big|_{-\pi}^\pi + \int_{-\pi}^\pi \frac{1}{n}\cos(nx)f'(x) \mathrm{d}x \\
+		&= \frac{1}{n}\cos(n\pi)\left[f(-\pi) - f(\pi)\right] + \frac{1}{n} \int_{-\pi}^\pi \cos(nx)f'(x)\mathrm{d}x.
+	\end{align}
+	Since $|\cos(n\pi)| \leq 1$ and $f$ is continuous on $[-\pi, \pi]$, we have that 
+	\begin{equation}
+		\lim\limits_{n \to \infty} \frac{1}{n} \cos(n\pi) \left[f(-\pi) - f(\pi)\right] = 0.
+	\end{equation}
+	Also,
+	\begin{align}
+		\frac{1}{n}\int_{-\pi}^\pi \cos(nx) f'(x) \mathrm{d}x &\leq \frac{1}{n} \int_{-\pi}^\pi f'(x) \mathrm{d}x \\
+		&= \frac{1}{n}\left[f(\pi) - f(-\pi)\right].
+	\end{align}
+	Thus, sending $n \to \infty$ gives us
+	\begin{equation}
+		\lim\limits_{n \to \infty} \frac{1}{n} \int_{-\pi}^\pi \cos(nx) f'(x) \mathrm{d}x = 0.
+	\end{equation}
+	Hence, putting everything together, we get
+	\begin{equation}
+		\lim\limits_{n \to \infty} \int_{-\pi}^\pi \sin(nx) f(x) \mathrm{d}x = 0,
+	\end{equation}
+	and we are done.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{document}
