@@ -242,6 +242,50 @@ Therefore, substituting into $\eqref{6a1}$ gives
 	and we are done.
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problem 7}
+\subsection*{(a)}
+We wish to fins a sequence $\{f_n\}_n$ of continuous functions $f_n: (0, 1) \to \R$ such that $f_n \to f$ pointwise, but not uniformly.
 
+Consider $f_n(x) := nx e^{-nx}$. Then the pointwise limit is given by 
+\begin{equation}
+	\lim\limits_{n \to \infty} f_n(x) = x \lim\limits_{n \to \infty} \frac{n}{e^{nx}} = 0,
+\end{equation}
+so $f_n \to 0$ pointwise.
+
+Let $M \in \N$. Then $\forall n \geq M$, let $x = \frac{1}{n}$ and $\epsilon_0 = e^{-1}$. Then
+\begin{align}
+	|f_n(x)| &= \left|nxe^{-nx}\right| \\
+	&= e^{-1} \\
+	&= \epsilon_0.
+\end{align}
+Hence $f_n$ does not converge uniformly to $0$ on $(0, 1)$.
+
+Therefore $f_n(x) = nxe^{-nx}$ does the job.
+
+\subsection*{(b)}
+\subsubsection*{(i)}
+\begin{proof}
+	Since $f$ is differentiable on $\R$, then $f$ is continuous on $\R$. Let $x, y \in \R$ with $x < y$. Then by the mean value theorem, $\exists c \in (x, y)$ such that \\$f(y) - f(x) = f'(c)(y - x)$, i.e. 
+	\begin{align}
+		|f(y) - f(x)| & = |f'(c)||y - x| \\
+		& \leq L |y - x|, \label{7bi1}
+	\end{align}
+	where \eqref{7bi1} follows from the assumption. 
+	
+	Therefore $f$ is Lipschitz continuous on $\R$.
+\end{proof}
+
+\subsubsection*{(ii)}
+\begin{proof}
+	Let $\epsilon > 0$. Choose $M - \frac{L}{\epsilon}$. Then $\forall x \in \R$ and $n \geq M$, we have (by Lipschitz continuity)
+	\begin{align}
+		|f_n(x) - f(x)| &= |f(x + \frac{1}{n}) - f(x)| \\
+		&\leq L |x + \frac{1}{n} - x| \\
+		&= L \frac{1}{n} \\
+		&< L \frac{\epsilon}{L} \\
+		&= \epsilon.
+	\end{align}
+	Therefore $f_n \to f$ uniformly on $\R$.
+\end{proof}
 
 \end{document}
